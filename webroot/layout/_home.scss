@@ -1,0 +1,205 @@
+@import '../base/base-dir.scss';
+
+
+
+.content {
+
+    .main-content {
+        padding: 3em 5em;
+    }
+
+    &-img--header {
+        width: 100%;
+    }
+
+    &-title {
+        text-align: center;
+        color: $primary;
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.5rem;
+        padding: 0 2em 1em;
+    }
+
+    &-persona {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+
+        span {
+            color: $special;
+            opacity: 0.7;
+        }
+
+        &--informations {
+            display: inline-block;
+
+            & p:nth-child(2) {
+                color: $special;
+                opacity: 0.7;
+            }
+        }
+
+        img {
+            width: 35px;
+            height: 35px;
+            border-radius: 90%;
+            margin-right: 1em;
+        }
+    }
+
+    &-description {
+        padding: 2em 0;
+        line-height: 2em;
+        color: $special;
+        opacity: 0.7;
+    }
+
+    &-title-citation {
+        color: primary;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.1rem;
+
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+
+        &-informations {
+            display: inline-block;
+            margin-left: 1em;
+
+
+            h3 {
+                color: $special;
+                margin-bottom: 1em;
+            }
+
+            p {
+                color: $special;
+                opacity: 0.7;
+
+            }
+        }
+    }
+
+}
+
+
+.container-cards {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    column-gap: 70px;
+    row-gap: 35px;
+    padding: 3em 0;
+}
+
+
+.form {
+    display: grid;
+    width: 46%;
+    margin: auto;
+
+    .label-email,
+    .label-password {
+        color: $special;
+    }
+
+    &-email,
+    &-password,
+    &-submit {
+        background-color: $special;
+        opacity: 0.2;
+        border-radius: 2em;
+        padding: 0.5em;
+        border: none;
+        color: white;
+    }
+
+
+    &-submit {
+        margin-top: 3em;
+        opacity: 1;
+        background-color: $thirdy;
+    }
+
+}
+
+
+.sidebar {
+    background-color: $primary;
+    padding: 2em;
+
+    h1 {
+        color: $white;
+        font-weight: 600;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .block-cards {
+        display: flex;
+        align-items: center;
+        padding: 2em 0 0;
+
+        img {
+            height: 50px;
+            margin-right: 1em;
+        }
+
+        &-informations {
+            display: inline-block;
+
+            p {
+                color: $white;
+            }
+
+            &--stat {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-colors {
+                color: red;
+                display: flex;
+                margin-top: 0.5em;
+
+                &:before {
+                    content: '';
+                    height: 10px;
+                    width: 10px;
+                    position: relative;
+                    display: flex;
+                    margin-right: 0.4em;
+                }
+            }
+
+            &-green {
+                color: $thirdy;
+
+                &::before {
+                    background-color: $thirdy;
+                }
+            }
+
+            &-yellow {
+                color: $fourthy;
+
+                &::before {
+                    background-color: $fourthy;
+                }
+            }
+
+            &-red {
+                color: $fifthy;
+
+                &::before {
+                    background-color: $fifthy;
+                }
+            }
+        }
+    }
+}
