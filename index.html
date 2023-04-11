@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" media="screen" title="no title"
+      charset="utf-8" />
+    <link rel="stylesheet" href="./webroot/app.css" />
+    <script src="app.js"></script>
+    <!-- Google Font : Grenze SemiBold 600 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap" rel="stylesheet">
+    <!-- Google Font : Sofia Sans Condensed ExtraLight 200 Italic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap" rel="stylesheet">
+    <!-- Google Font : Sofia Sans Condensed Medium 500 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:wght@500&display=swap" rel="stylesheet">
+    <!-- Kit Font Awesome -->
+    <script src="https://kit.fontawesome.com/23c1a897ea.js" crossorigin="anonymous"></script>
+    <title>Portfolio - Madeline MORISSET</title>
+    <meta name="description" content="Portfolio de Madeline MORISSET, apprenante en Développement Web et Web Mobile"/>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" media="screen" title="no title"
-    charset="utf-8" />
-  <link rel="stylesheet" href="./webroot/app.css" />
-  <script src="app.js"></script>
-  <title>Portfolio - Madeline MORISSET</title>
-  <meta name="description" content="Portfolio de Madeline MORISSET, apprenante en Développement Web et Web Mobile"/>
-</head>
+  <body>
+    <header class="siteHeader">
+      <!-- Navigation -->
+      <section class="siteHeader__nav">
+        <section class="siteHeader__myLogo--redLightGrey"></section> <!-- Adding the image in css (logoV1.svg) -->
+        <a href="" class="siteHeader__menuBurger"><i class="fa-solid fa-bars fa-3x" style="color: #000000;"></i></a> <!-- Future additions: EF's internship report, CPS, ... -->
+      </section>
 
-<body>
-  <header class="siteHeader">
-    <section class="siteHeader-navigation">
-      <section class="siteHeader-logo"></section>
-      <section class="siteHeader-menuBurger"></section>
-    </section>
+      <!-- My job -->
+      <section class="siteHeader__job">
+        <h1 class="siteHeader__jobTitle">Développeuse Front end</h1>
+        <p class="siteHeader__jobSubtitle">Bonjour, je m’appelle Madeline, bienvenue sur mon portfolio !</p>
+        <section class="siteHeader__jobImage"></section> <!-- Adding the image in css (webDevJob.svg) -->
+      </section>
+    </header>
 
-    <section class="siteHeader-jobTitleSection">
-      <h1 class="siteHeader-jobTitle">Développeuse Front end</h1>
-      <p class="siteHeader-jobSubtitle">Bonjour, je m’appelle Madeline, bienvenue sur mon portfolio !</p>
-      <section class="siteHeader-jobImage"></section>
-    </section>
-  </header>
+    <main class="siteBody">
+      <!-- Intoduction to my background -->
+      <section class="siteBody__intro">
+        <p class="siteBody__intro--txtMedium">
+          Après avoir terminé mes études secondaires en 2013, j'ai commencé à m'intéresser au développement web alors que je cherchais ma voie.
+        </p>
+        <p class="siteBody__intro--txtMedium">
+          J'ai cherché une formation diplômante dans ce domaine, mais j'ai dû mettre mes plans en suspens en raison de l'aggravation de mon handicap. <br>
+          Par la suite, j'ai poursuivi ma formation en autodidacte chaque fois que cela était possible.
+        </p>
+        <p class="siteBody__intro--txtMedium">  
+          En 2022, après une intervention chirurgicale qui a changé ma vie, j'ai pu reprendre ce projet et me consacrer pleinement à ma formation. <br>
+          Trois ans plus tard, j'ai intégré la formation en développement web et web mobile de l'École Atypique à Chasseneuil-du-Poitou (86).
+        </p>
+        <!-- Link to Emil Frey's internship report -->
+        <p class="siteBody__intro--txtExtraLightItalic">
+          Pour plus de détails sur mes expériences, je vous invite à consulter mon <a href="">rapport de stage</a> sur mes immersions au siège d'Emil Frey.
+        </p>
+      </section>
 
-  <main class="siteBody">
-    <section class="siteBody-intro">
-      <p class="siteBody-textMedium">Après avoir terminé mes études secondaires en 2013, j'ai commencé à m'intéresser au développement web alors que je cherchais ma voie. <br>
-        J'ai cherché une formation diplômante dans ce domaine, mais j'ai dû mettre mes plans en suspens en raison de l'aggravation de mon handicap. <br>
-        Par la suite, j'ai poursuivi ma formation en autodidacte chaque fois que cela était possible. <br>
-        En 2022, après une intervention chirurgicale qui a changé ma vie, j'ai pu reprendre ce projet et me consacrer pleinement à ma formation. <br>
-        Trois ans plus tard, j'ai intégré la formation en développement web et web mobile de l'École Atypique à Chasseneuil-du-Poitou (86).</p>
+      <section class="siteBody__skillCards">
+        <!-- My Web Development card -->
+        <article class="siteBody__dev">
+          <section class="siteBody__logo--redCercleBG"><i class="fa-solid fa-code" style="color: #ffffff;"></i></section>
+          <h3 class="siteBody__title">Développement</h3>
+          <p class="siteBody__subtitle">Après la formation Développement Web et Web Mobile, j’apprend le Back end et le Front end, mais j’ai une forte appétence pour le Front.</p>
+          <section class="siteBody__learnLove">
+            <h5 class="siteBody__learnLoveTitle">Ce que j’apprends :</h5>
+            <p class="siteBody__learnLoveText">HTML, CSS, PHP, SQL, JS</p>
+          </section>
+          <section class="siteBody__tools">
+            <h5 class="siteBody__toolsTitle">Outils de développement :</h5>
+            <p class="siteBody__toolsText">VSCode<br>Bitbucket<br>Github<br>Terminal</p>
+          </section>        
+        </article>
 
-      <p class="siteBody-textExtraLightItalic">Pour plus de détails sur mes expériences, je vous invite à consulter mon <a href="">rapport de stage</a> sur mes immersions au siège d'Emil Frey.</p>
-    </section>
+        <!-- My Design card -->
+        <article class="siteBody__design">
+          <section class="siteBody__logo--redCercleBG"><i class="fa-solid fa-bezier-curve" style="color: #ffffff;"></i></section>
+          <h3 class="siteBody__title">Design</h3>
+          <p class="siteBody__subtitle">J’apprends le Design sur mon temps libre, par envie d’apprendre, mais également pour faciliter et améliorer mes projets personnels.</p>
+          <section class="siteBody__learnLove">
+            <h5 class="siteBody__learnLoveTitle">Ce que j’apprends :</h5>
+            <p class="siteBody__learnLoveText">UX, UI, Web, Logos</p>
+          </section>
+          <section class="siteBody__tools">
+            <h5 class="siteBody__toolsTitle">Outils de conception :</h5>
+            <p class="siteBody__toolsText">Figma<br>Adobe Illustrator<br>Adobe XD</p>
+          </section>
+        </article>
 
-    <section class="siteBody-skillCards">
-      <section class="siteBody-devCard">
-        <section class="siteBody-devLogo"></section>
-        <h3 class="siteBody-devTitle">Développement</h3>
-        <p class="siteBody-devSubtitle">Aves la formation Développement Web et Web Mobile, j’apprend le Back end et le Front end, mais j’ai une forte appétence pour le Front.</p>
-        <section class="siteBody-devLearning">
-          <h5 class="siteBody-devLearningTitle">Ce que j’apprends :</h5>
-          <p class="siteBody-devLearningText">HTML, CSS, PHP, SQL, JS</p>
+        <!-- My hobbies card -->
+        <article class="siteBody__hobbies">
+          <section class="siteBody__logo--redCercleBG"><i class="fa-solid fa-icons" style="color: #ffffff;"></i></section>
+          <h3 class="siteBody__title">Centres d’intérêt</h3>
+          <p class="siteBody__subtitle">J’aime aussi bien les travaux manuels que l’informatique.</p>
+          <section class="siteBody__learnLove">
+            <h5 class="siteBody__learnLoveTitle">Ce que j’aime :</h5>
+            <p class="siteBody__learnLoveText">Écouter de la musique<br>Lire<br>Cuisiner<br>Coudre<br>Bricoler<br>Réparer</p>
+          </section>
+        </article>
+      </section>
+
+      <!-- My past projects -->
+      <section class="siteBody__projects">
+        <h2 class="siteBody__projectsTitle">Mes projets</h2>
+        <section class="siteBody__projects">
+          <a href="" class="siteBody__project"><img src="./webroot/assets/img/mockup2DProd.png" alt="2D Prod's Mockup (unresponsive)"></a>
+          <a href="" class="siteBody__project"><img src="./webroot/assets/img/mockupReservia.png" alt="Reservia's Mockup (responsive)"></a>
+          <a href="" class="siteBody__project"><img src="./webroot/assets/img/mockupPortfolio.png" alt="Portfolio's Mockup"></a> <!--  (temporary version) -->
         </section>
-        <section class="siteBody-devTools">
-          <h5 class="siteBody-devToolsTitle">Outils de développement :</h5>
-          <p class="siteBody-devToolsText">VSCode<br>Bitbucket<br>Github<br>Terminal</p>
-        </section>        
       </section>
+    </main>
 
-      <section class="siteBody-designCard">
-
-      </section>
-
-      <section class="siteBody-hobbiesCard">
-
-      </section>
-    </section>
-  </main>
-
-  <footer class="siteFooter">
-
-  </footer>
-</body>
-
+    <footer class="siteFooter">
+      <section class="siteHeader__myLogo--redWhite"></section> <!-- Adding the image in css (logoV9.svg) -->
+      <a href="https://www.facebook.com/madeline.morisset"><i class="fa-brands fa-facebook fa-3x" style="color: #000000;"></i></a>
+      <a href="www.linkedin.com/in/madelinemorisset"><i class="fa-brands fa-linkedin fa-3x" style="color: #000000;"></i></a>
+      <a href="https://github.com/MadelineMorisset?tab=repositories"><i class="fa-brands fa-github fa-3x" style="color: #000000;"></i></a>
+      <a href="mailto:madeline.morisset@outlook.fr"><i class="fa-solid fa-envelope fa-3x" style="color: #000000;"></i></a>
+    </footer>
+  </body>
 </html>
