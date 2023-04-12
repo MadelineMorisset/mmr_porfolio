@@ -15,95 +15,95 @@
   <body>
     <header class="siteHeader">
       <!-- Navigation -->
-      <section class="siteHeader__nav">
-        <section class="siteHeader__myLogo--redLightGrey"></section> <!-- Adding the image in css (logoV1.svg) -->
-        <a href="" class="siteHeader__menuBurger"><i class="fa-solid fa-bars fa-3x" style="color: #000000;"></i></a> <!-- Future additions: EF's internship report, CPS, ... -->
+      <section class="nav">
+        <section class="nav__myLogo"></section> <!-- Adding the image in css (logoV1.svg) -->
+        <a href="" class="nav__menuBurger"><i class="fa-solid fa-bars fa-3x" style="color: #000000;"></i></a> <!-- Future additions: EF's internship report, CPS, ... -->
       </section>
 
       <!-- My job -->
-      <section class="siteHeader__job">
-        <h1 class="siteHeader__jobTitle">Développeuse Front end</h1>
-        <p class="siteHeader__jobSubtitle">Bonjour, je m’appelle Madeline, bienvenue sur mon portfolio !</p>
-        <section class="siteHeader__jobImage"></section> <!-- Adding the image in css (webDevJob.svg) -->
+      <section class="job">
+        <h1 class="job__title txtSemiBold">Développeuse Front end</h1>
+        <p class="job__subtitle txtMedium">Bonjour, je m’appelle Madeline, bienvenue sur mon portfolio !</p>
+        <section class="job__image"></section> <!-- Adding the image in css (webDevJob.svg) -->
       </section>
     </header>
 
     <main class="siteBody">
       <!-- Intoduction to my background -->
       <section class="siteBody__intro">
-        <p class="siteBody__intro--txtMedium">
+        <p class="txtMedium"> <!-- txtMedium = Sofia Sans Condensed Medium 500 -->
           Après avoir terminé mes études secondaires en 2013, j'ai commencé à m'intéresser au développement web alors que je cherchais ma voie.
         </p>
-        <p class="siteBody__intro--txtMedium">
+        <p class="txtMedium"> <!-- txtMedium = Sofia Sans Condensed Medium 500 -->
           J'ai cherché une formation diplômante dans ce domaine, mais j'ai dû mettre mes plans en suspens en raison de l'aggravation de mon handicap. <br>
           Par la suite, j'ai poursuivi ma formation en autodidacte chaque fois que cela était possible.
         </p>
-        <p class="siteBody__intro--txtMedium">  
+        <p class="txtMedium"> <!-- txtMedium = Sofia Sans Condensed Medium 500 -->  
           En 2022, après une intervention chirurgicale qui a changé ma vie, j'ai pu reprendre ce projet et me consacrer pleinement à ma formation. <br>
           Trois ans plus tard, j'ai intégré la formation en développement web et web mobile de l'École Atypique à Chasseneuil-du-Poitou (86).
         </p>
         <!-- Link to Emil Frey's internship report -->
-        <p class="siteBody__intro--txtExtraLightItalic">
+        <p class="txtItalic"> <!-- txtItalic = Sofia Sans Condensed ExtraLight 200 Italic -->
           Pour plus de détails sur mes expériences, je vous invite à consulter mon <a href="">rapport de stage</a> sur mes immersions au siège d'Emil Frey.
         </p>
       </section>
 
       <section class="siteBody__skillCards">
         <!-- My Web Development card -->
-        <article class="siteBody__dev">
-          <section class="siteBody__logo--redCercleBG"><i class="fa-solid fa-code fa-2x" style="color: #ffffff;"></i></section>
-          <h3 class="siteBody__title">Développement</h3>
-          <p class="siteBody__subtitle">Après la formation Développement Web et Web Mobile, j’apprend le Back end et le Front end, mais j’ai une forte appétence pour le Front.</p>
-          <section class="siteBody__learnLove">
-            <h5 class="siteBody__learnLoveTitle">Ce que j’apprends :</h5>
-            <p class="siteBody__learnLoveText">HTML, CSS, PHP, SQL, JS</p>
+        <article class="skillCard__dev">
+          <section class="logo--redCircleBG"><i class="fa-solid fa-code fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
+          <h3 class="cardTitle txtSemiBold">Développement</h3>
+          <p class="cardSubtitle txtMedium">Après la formation Développement Web et Web Mobile, j’apprend le Back end et le Front end, mais j’ai une forte appétence pour le Front.</p>
+          <section class="cardLearnLove">
+            <h5 class="cardLearnLoveTitle txtSemiBold">Ce que j’apprends :</h5>
+            <p class="cardLearnLoveTxt txtMedium">HTML, CSS, PHP, SQL, JS</p>
           </section>
-          <section class="siteBody__tools">
-            <h5 class="siteBody__toolsTitle">Outils de développement :</h5>
-            <p class="siteBody__toolsText">VSCode<br>Bitbucket<br>Github<br>Terminal</p>
+          <section class="cardTools">
+            <h5 class="cardToolsTitle txtSemiBold">Outils de développement :</h5>
+            <p class="cardToolsText txtMedium">VSCode<br>Bitbucket<br>Github<br>Terminal</p>
           </section>        
         </article>
 
         <!-- My Design card -->
-        <article class="siteBody__design">
-          <section class="siteBody__logo--redCercleBG"><i class="fa-solid fa-bezier-curve fa-2x" style="color: #ffffff;"></i></section>
-          <h3 class="siteBody__title">Design</h3>
-          <p class="siteBody__subtitle">J’apprends le Design sur mon temps libre, par envie d’apprendre, mais également pour faciliter et améliorer mes projets personnels.</p>
-          <section class="siteBody__learnLove">
-            <h5 class="siteBody__learnLoveTitle">Ce que j’apprends :</h5>
-            <p class="siteBody__learnLoveText">UX, UI, Web, Logos</p>
+        <article class="skillCard__design">
+          <section class="logo--redCercleBG"><i class="fa-solid fa-bezier-curve fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
+          <h3 class="cardTitle txtSemiBold">Design</h3>
+          <p class="cardSubtitle txtMedium">J’apprends le Design sur mon temps libre, par envie d’apprendre, mais également pour faciliter et améliorer mes projets personnels.</p>
+          <section class="cardLearnLove">
+            <h5 class="cardLearnLoveTitle txtSemiBold">Ce que j’apprends :</h5>
+            <p class="cardLearnLoveTxt txtMedium">UX, UI, Web, Logos</p>
           </section>
-          <section class="siteBody__tools">
-            <h5 class="siteBody__toolsTitle">Outils de conception :</h5>
-            <p class="siteBody__toolsText">Figma<br>Adobe Illustrator<br>Adobe XD</p>
+          <section class="cardTools">
+            <h5 class="cardToolsTitle txtSemiBold">Outils de conception :</h5>
+            <p class="cardToolsText txtMedium">Figma<br>Adobe Illustrator<br>Adobe XD</p>
           </section>
         </article>
 
         <!-- My hobbies card -->
-        <article class="siteBody__hobbies">
-          <section class="siteBody__logo--redCercleBG"><i class="fa-solid fa-icons fa-2x" style="color: #ffffff;"></i></section>
-          <h3 class="siteBody__title">Centres d’intérêt</h3>
-          <p class="siteBody__subtitle">J’aime aussi bien les travaux manuels que l’informatique.</p>
-          <section class="siteBody__learnLove">
-            <h5 class="siteBody__learnLoveTitle">Ce que j’aime :</h5>
-            <p class="siteBody__learnLoveText">Écouter de la musique<br>Lire<br>Cuisiner<br>Coudre<br>Bricoler<br>Réparer</p>
+        <article class="skillCard__hobbies">
+          <section class="logo--redCercleBG"><i class="fa-solid fa-icons fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
+          <h3 class="cardTitle txtSemiBold">Centres d’intérêt</h3>
+          <p class="cardSubtitle txtMedium">J’aime aussi bien les travaux manuels que l’informatique.</p>
+          <section class="cardLearnLove">
+            <h5 class="cardLearnLoveTitle txtSemiBold">Ce que j’aime :</h5>
+            <p class="cardLearnLoveTxt txtMedium">Écouter de la musique<br>Lire<br>Cuisiner<br>Coudre<br>Bricoler<br>Réparer</p>
           </section>
         </article>
       </section>
 
       <!-- My past projects -->
       <section class="siteBody__projects">
-        <h2 class="siteBody__projectsTitle">Mes projets</h2>
+        <h2 class="projects__title txtSemiBold">Mes projets</h2>
         <section class="siteBody__projects">
-          <a href="" class="siteBody__project2DProd"><img src="./webroot/assets/img/mockup2DProd.png" alt="2D Prod's Mockup (unresponsive)"></a>
-          <a href="" class="siteBody__projectReservia"><img src="./webroot/assets/img/mockupReservia.png" alt="Reservia's Mockup (responsive)"></a>
-          <a href="" class="siteBody__project"><img src="./webroot/assets/img/mockupPortfolio.png" alt="Portfolio's Mockup"></a> <!--  (PNG = temporary version) -->
+          <a href="" class="siteBody__project2DProd"></a>
+          <a href="" class="siteBody__projectReservia"></a>
+          <a href="" class="siteBody__project"></a>
         </section>
       </section>
     </main>
 
     <footer class="siteFooter">
-      <section class="siteHeader__myLogo--redWhite"></section> <!-- Adding the image in css (logoV9.svg) -->
+      <section class="siteFooter__myLogo"></section> <!-- Adding the image in css (logoV9.svg) -->
       <a href="https://www.facebook.com/madeline.morisset"><i class="fa-brands fa-facebook fa-3x" style="color: #ffffff;"></i></a>
       <a href="www.linkedin.com/in/madelinemorisset"><i class="fa-brands fa-linkedin fa-3x" style="color: #ffffff;"></i></a>
       <a href="https://github.com/MadelineMorisset?tab=repositories"><i class="fa-brands fa-github fa-3x" style="color: #ffffff;"></i></a>
