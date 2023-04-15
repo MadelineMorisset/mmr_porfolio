@@ -1,5 +1,65 @@
 @import '../base/base-dir.scss';
 
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+
+    .nav {    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 50px 50px 50px; 
+        width: 100%;
+        height: 40px;   
+    }
+
+    &-myLogo {
+        background-image: url("../../webroot/assets/img/logoV1.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90px;
+        width: 90px;
+        height: 90px;
+    }
+
+    &-menuBurger {
+        align-self: center;
+    }
+
+    .job {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40%;
+    }
+
+    &-title--semiBold {
+        font-family: $titles-font;
+        font-weight: $semiBold-weight;
+        font-size: $h1;
+    }
+
+    &-subtitle--medium {
+        font-family: $text-font;
+        font-weight: $medium-weight;
+        font-size: $subtitle-size;
+    }
+
+    &-image {
+        margin-top: -25px;
+        background-image: url("../../webroot/assets/img/webDevJob.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        width: 800px;
+        height: 415px;
+    }
+}
+
 
 
 // .content {

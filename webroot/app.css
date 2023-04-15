@@ -127,9 +127,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Fonts import */
 /* Grenze SemiBold 600 */
 /* Sofia Sans Condensed ExtraLight 200 Italic */
 /* Sofia Sans Condensed Medium 500 */
+/* Fonts definition */
+/* Titles */
+/* Text */
+/* Fonts weight */
+/* Italic text */
+/* Regular text */
+/* Titles */
+/* Fonts size : titles */
+/* In header > job */
+/* In content > content-projects */
+/* In content > content-cards > card */
+/* In content > content-cards > card > card-learnLove */
+/* Fonts size : text */
+/* In header > job */
+/* In content > content-intro */
+/* In footer */
+/* In content > content-cards */
 html,
 body,
 div,
@@ -253,9 +271,72 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Fonts import */
 /* Grenze SemiBold 600 */
 /* Sofia Sans Condensed ExtraLight 200 Italic */
 /* Sofia Sans Condensed Medium 500 */
+/* Fonts definition */
+/* Titles */
+/* Text */
+/* Fonts weight */
+/* Italic text */
+/* Regular text */
+/* Titles */
+/* Fonts size : titles */
+/* In header > job */
+/* In content > content-projects */
+/* In content > content-cards > card */
+/* In content > content-cards > card > card-learnLove */
+/* Fonts size : text */
+/* In header > job */
+/* In content > content-intro */
+/* In footer */
+/* In content > content-cards */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 750px; }
+  .header .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 50px 50px 50px;
+    width: 100%;
+    height: 40px; }
+  .header-myLogo {
+    background-image: url("../../webroot/assets/img/logoV1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    width: 90px;
+    height: 90px; }
+  .header-menuBurger {
+    align-self: center; }
+  .header .job {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%; }
+  .header-title--semiBold {
+    font-family: "Grenze";
+    font-weight: 600;
+    font-size: 64px; }
+  .header-subtitle--medium {
+    font-family: "Sofia Sans Condensed";
+    font-weight: 500;
+    font-size: 32px; }
+  .header-image {
+    margin-top: -25px;
+    background-image: url("../../webroot/assets/img/webDevJob.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 800px;
+    height: 415px; }
+
 a {
   color: #533541; }
 

@@ -12,102 +12,105 @@
     <meta name="description" content="Portfolio de Madeline MORISSET, apprenante en Développement Web et Web Mobile"/>
   </head>
 
-  <body>
-    <header class="siteHeader">
+  <body class="siteBody">
+    <header class="header">
       <!-- Navigation -->
       <section class="nav">
-        <section class="nav__myLogo"></section> <!-- Adding the image in css (logoV1.svg) -->
-        <a href="" class="nav__menuBurger"><i class="fa-solid fa-bars fa-3x" style="color: #000000;"></i></a> <!-- Future additions: EF's internship report, CPS, ... -->
+        <section class="header-myLogo"></section> <!-- Adding the image in css (logoV1.svg) -->
+        <a href="" class="header-menuBurger"><i class="fa-solid fa-bars fa-4x" style="color: #000000;"></i></a> <!-- Future additions: EF's internship report, CPS, ... -->
       </section>
 
       <!-- My job -->
       <section class="job">
-        <h1 class="job__title txtSemiBold">Développeuse Front end</h1>
-        <p class="job__subtitle txtMedium">Bonjour, je m’appelle Madeline, bienvenue sur mon portfolio !</p>
-        <section class="job__image"></section> <!-- Adding the image in css (webDevJob.svg) -->
+        <h1 class="header-title--semiBold">Développeuse Front end</h1>
+        <p class="header-subtitle--medium">Bonjour, je m’appelle Madeline, bienvenue sur mon portfolio !</p>
+        <section class="header-image"></section>
       </section>
     </header>
 
-    <main class="siteBody">
+    <main class="content">
       <!-- Intoduction to my background -->
-      <section class="siteBody__intro">
-        <p class="txtMedium"> <!-- txtMedium = Sofia Sans Condensed Medium 500 -->
+      <section class="content-intro">
+        <p class="content-intro--medium">
           Après avoir terminé mes études secondaires en 2013, j'ai commencé à m'intéresser au développement web alors que je cherchais ma voie.
         </p>
-        <p class="txtMedium"> <!-- txtMedium = Sofia Sans Condensed Medium 500 -->
+        <p class="content-intro--medium">
           J'ai cherché une formation diplômante dans ce domaine, mais j'ai dû mettre mes plans en suspens en raison de l'aggravation de mon handicap. <br>
           Par la suite, j'ai poursuivi ma formation en autodidacte chaque fois que cela était possible.
         </p>
-        <p class="txtMedium"> <!-- txtMedium = Sofia Sans Condensed Medium 500 -->  
+        <p class="content-intro--medium">
           En 2022, après une intervention chirurgicale qui a changé ma vie, j'ai pu reprendre ce projet et me consacrer pleinement à ma formation. <br>
           Trois ans plus tard, j'ai intégré la formation en développement web et web mobile de l'École Atypique à Chasseneuil-du-Poitou (86).
         </p>
         <!-- Link to Emil Frey's internship report -->
-        <p class="txtItalic"> <!-- txtItalic = Sofia Sans Condensed ExtraLight 200 Italic -->
+        <p class="content-intro--italic">
           Pour plus de détails sur mes expériences, je vous invite à consulter mon <a href="">rapport de stage</a> sur mes immersions au siège d'Emil Frey.
         </p>
       </section>
 
-      <section class="siteBody__skillCards">
+      <section class="content-cards">
         <!-- My Web Development card -->
-        <article class="skillCard__dev">
-          <section class="logo--redCircleBG"><i class="fa-solid fa-code fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
-          <h3 class="cardTitle txtSemiBold">Développement</h3>
-          <p class="cardSubtitle txtMedium">Après la formation Développement Web et Web Mobile, j’apprend le Back end et le Front end, mais j’ai une forte appétence pour le Front.</p>
-          <section class="cardLearnLove">
-            <h5 class="cardLearnLoveTitle txtSemiBold">Ce que j’apprends :</h5>
-            <p class="cardLearnLoveTxt txtMedium">HTML, CSS, PHP, SQL, JS</p>
+        <article class="card card-dev">
+          <section class="card-logo--redCircleBG"><i class="fa-solid fa-code fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
+          <h3 class="card-title--semiBold">Développement</h3>
+          <p class="card-subtitle--medium">Après la formation Développement Web et Web Mobile, j’apprend le Back end et le Front end, mais j’ai une forte appétence pour le Front.</p>
+          <section class="card-learnLove">
+            <h4 class="card-learnLove--semiBold">Ce que j’apprends :</h4>
+            <p class="card-learnLove--medium">HTML, CSS, PHP, SQL, JS</p>
           </section>
-          <section class="cardTools">
-            <h5 class="cardToolsTitle txtSemiBold">Outils de développement :</h5>
-            <p class="cardToolsText txtMedium">VSCode<br>Bitbucket<br>Github<br>Terminal</p>
+          <section class="card-tools">
+            <h4 class="card-tools--semiBold">Outils de développement :</h4>
+            <p class="card-tools--medium">VSCode<br>Bitbucket<br>Github<br>Terminal</p>
           </section>        
         </article>
 
         <!-- My Design card -->
-        <article class="skillCard__design">
-          <section class="logo--redCercleBG"><i class="fa-solid fa-bezier-curve fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
-          <h3 class="cardTitle txtSemiBold">Design</h3>
-          <p class="cardSubtitle txtMedium">J’apprends le Design sur mon temps libre, par envie d’apprendre, mais également pour faciliter et améliorer mes projets personnels.</p>
-          <section class="cardLearnLove">
-            <h5 class="cardLearnLoveTitle txtSemiBold">Ce que j’apprends :</h5>
-            <p class="cardLearnLoveTxt txtMedium">UX, UI, Web, Logos</p>
+        <article class="card card-design">
+          <section class="card-logo--redCircleBG"><i class="fa-solid fa-bezier-curve fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
+          <h3 class="card-title--semiBold">Design</h3>
+          <p class="card-subtitle--medium">J’apprends le Design sur mon temps libre, par envie d’apprendre, mais également pour faciliter et améliorer mes projets personnels.</p>
+          <section class="card-learnLove">
+            <h4 class="card-learnLove--semiBold">Ce que j’apprends :</h4>
+            <p class="card-learnLove--medium">UX, UI, Web, Logos</p>
           </section>
-          <section class="cardTools">
-            <h5 class="cardToolsTitle txtSemiBold">Outils de conception :</h5>
-            <p class="cardToolsText txtMedium">Figma<br>Adobe Illustrator<br>Adobe XD</p>
+          <section class="card-tools">
+            <h4 class="card-tools--semiBold">Outils de conception :</h4>
+            <p class="card-tools--medium">Figma<br>Adobe Illustrator<br>Adobe XD</p>
           </section>
         </article>
 
         <!-- My hobbies card -->
-        <article class="skillCard__hobbies">
-          <section class="logo--redCercleBG"><i class="fa-solid fa-icons fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
-          <h3 class="cardTitle txtSemiBold">Centres d’intérêt</h3>
-          <p class="cardSubtitle txtMedium">J’aime aussi bien les travaux manuels que l’informatique.</p>
-          <section class="cardLearnLove">
-            <h5 class="cardLearnLoveTitle txtSemiBold">Ce que j’aime :</h5>
-            <p class="cardLearnLoveTxt txtMedium">Écouter de la musique<br>Lire<br>Cuisiner<br>Coudre<br>Bricoler<br>Réparer</p>
+        <article class="card card-hobbies">
+          <section class="card-logo--redCircleBG"><i class="fa-solid fa-icons fa-2x" style="color: #ffffff;"></i></section> <!-- Addition red ($primary) circle in background -->
+          <h3 class="card-title--semiBold">Centres d’intérêt</h3>
+          <p class="card-subtitle--medium">J’aime aussi bien les travaux manuels que l’informatique.</p>
+          <section class="card-learnLove">
+            <h4 class="card-learnLove--semiBold">Ce que j’aime :</h4>
+            <p class="card-learnLove--medium">Écouter de la musique<br>Lire<br>Cuisiner<br>Coudre<br>Bricoler<br>Réparer</p>
           </section>
         </article>
       </section>
 
       <!-- My past projects -->
-      <section class="siteBody__projects">
-        <h2 class="projects__title txtSemiBold">Mes projets</h2>
-        <section class="siteBody__projects">
-          <a href="" class="siteBody__project2DProd"></a>
-          <a href="" class="siteBody__projectReservia"></a>
-          <a href="" class="siteBody__project"></a>
+      <section class="content-projects">
+        <h2 class="projects-title--semiBold">Mes projets</h2>
+        <section class="project">
+          <a href="" class="project-project2DProd"></a>
+          <a href="" class="project-projectReservia"></a>
+          <a href="" class="project-portfolio"></a>
         </section>
       </section>
     </main>
 
-    <footer class="siteFooter">
-      <section class="siteFooter__myLogo"></section> <!-- Adding the image in css (logoV9.svg) -->
-      <a href="https://www.facebook.com/madeline.morisset"><i class="fa-brands fa-facebook fa-3x" style="color: #ffffff;"></i></a>
-      <a href="www.linkedin.com/in/madelinemorisset"><i class="fa-brands fa-linkedin fa-3x" style="color: #ffffff;"></i></a>
-      <a href="https://github.com/MadelineMorisset?tab=repositories"><i class="fa-brands fa-github fa-3x" style="color: #ffffff;"></i></a>
-      <a href="mailto:madeline.morisset@outlook.fr"><i class="fa-solid fa-envelope fa-3x" style="color: #ffffff;"></i></a>
+    <footer class="footer">
+      <section class="siteFooter-myLogo"></section> <!-- Adding the image in css (logoV9.svg) -->
+      <section class="medias">
+        <a href="https://www.facebook.com/madeline.morisset" class="medias-facebook"><i class="fa-brands fa-facebook fa-3x" style="color: #ffffff;"></i></a>
+        <a href="www.linkedin.com/in/madelinemorisset" class="medias-linkedIn"><i class="fa-brands fa-linkedin fa-3x" style="color: #ffffff;"></i></a>
+        <a href="https://github.com/MadelineMorisset?tab=repositories" class="medias-github"><i class="fa-brands fa-github fa-3x" style="color: #ffffff;"></i></a>
+        <a href="mailto:madeline.morisset@outlook.fr" class="medias-eMail"><i class="fa-solid fa-envelope fa-3x" style="color: #ffffff;"></i></a>
+      </section>
+      <p class="siteFooter-creationYear--medium">@madelinemorisset2023</p>
     </footer>
   </body>
 </html>
