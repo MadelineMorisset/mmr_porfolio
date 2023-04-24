@@ -341,11 +341,33 @@ table {
     height: 415px; }
 
 .content {
-  /* Site's content */ }
+  /* Site's content */
+  margin-top: -26px;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+  background-color: #770D29;
+  color: white;
+  height: 800px; }
   .content-intro {
     /* Section : content-intro */
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-    background-color: #770D29; }
+    padding: 70px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; }
+  .content-intro--medium {
+    padding: 20px 0;
+    width: 80%;
+    font-family: "Sofia Sans Condensed";
+    font-weight: 500;
+    font-size: 24px; }
+  .content-intro--italic {
+    width: 80%;
+    font-family: "Sofia Sans Condensed";
+    font-weight: 100;
+    font-size: 24px; }
+  .content-intro--link {
+    color: white; }
 
 a {
   color: #533541; }

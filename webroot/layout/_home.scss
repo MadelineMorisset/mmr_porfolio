@@ -61,10 +61,38 @@
 }
 
 .content  { /* Site's content */
-    
+    margin-top: -26px;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+    background-color: $primary;
+    color: $white;
+    height: 800px;
+
     &-intro { /* Section : content-intro */
-        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-        background-color: $primary;
+        padding: 70px 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &-intro--medium {
+        padding: 20px 0;
+        width: 80%;
+        font-family: $text-font;
+        font-weight: $medium-weight;
+        font-size: $intro-size;
+    }
+
+    &-intro--italic {
+        width: 80%;
+        font-family: $text-font;
+        font-weight: $extraLight-weight;
+        font-size: $intro-size;
+    }
+
+    &-intro--link {
+        color: $white;
     }
 }
 
