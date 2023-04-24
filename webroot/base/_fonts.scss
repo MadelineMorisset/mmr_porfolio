@@ -1,0 +1,25 @@
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap'); /* Grenze SemiBold 600 */
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap'); /* Sofia Sans Condensed ExtraLight 200 Italic */
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:wght@500&display=swap'); /* Sofia Sans Condensed Medium 500 */
+
+/* Fonts definition */
+$titles-font: 'Grenze'; /* Titles */
+$text-font: 'Sofia Sans Condensed'; /* Text */
+
+/* Fonts weight */
+$extraLight-weight: 100; /* Italic text */
+$medium-weight:   500; /* Regular text */
+$semiBold-weight: 600; /* Titles */
+
+/* Fonts size : titles */
+$h1: 64px; /* In header > job */
+$h2: 40px; /* In content > content-projects */
+$h3: 24px; /* In content > content-cards > card */
+$h4: 15px; /* In content > content-cards > card > card-learnLove */
+
+/* Fonts size : text */
+$subtitle-size: 32px; /* In header > job */
+$intro-size: 24px; /* In content > content-intro */
+$creationYear-size: 24px; /* In footer */
+$card-size: 15px; /* In content > content-cards */

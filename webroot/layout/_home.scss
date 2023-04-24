@@ -1,100 +1,75 @@
 @import '../base/base-dir.scss';
 
+.header { /* Site's header */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
 
+    .nav { /* Section : nav */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 50px 50px 50px; 
+        width: 100%;
+        height: 40px;   
+    }
 
-// .content {
+    &-myLogo {
+        background-image: url("../../webroot/assets/img/logoV1.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90px;
+        width: 90px;
+        height: 90px;
+    }
 
-//     .main-content {
-//         padding: 3em 5em;
-//     }
+    &-menuBurger {
+        align-self: center;
+    }
 
-//     &-img--header {
-//         width: 100%;
-//     }
+    .job { /* Section : job */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40%;
+    }
 
-//     &-title {
-//         text-align: center;
-//         color: $primary;
-//         text-align: center;
-//         font-weight: 600;
-//         font-size: 2.5rem;
-//         padding: 0 2em 1em;
-//     }
+    &-title--semiBold {
+        font-family: $titles-font;
+        font-weight: $semiBold-weight;
+        font-size: $h1;
+    }
 
-//     &-persona {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         padding: 2em;
+    &-subtitle--medium {
+        font-family: $text-font;
+        font-weight: $medium-weight;
+        font-size: $subtitle-size;
+    }
 
-//         span {
-//             color: $special;
-//             opacity: 0.7;
-//         }
+    &-image {
+        margin-top: -25px;
+        background-image: url("../../webroot/assets/img/webDevJob.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 800px;
+        height: 415px;
+    }
+}
 
-//         &--informations {
-//             display: inline-block;
+.content  { /* Site's content */
+    
+    &-intro { /* Section : content-intro */
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+        background-color: $primary;
+    }
+}
 
-//             & p:nth-child(2) {
-//                 color: $special;
-//                 opacity: 0.7;
-//             }
-//         }
+// .footer { /* Site's footer */
 
-//         img {
-//             width: 35px;
-//             height: 35px;
-//             border-radius: 90%;
-//             margin-right: 1em;
-//         }
-//     }
-
-//     &-description {
-//         padding: 2em 0;
-//         line-height: 2em;
-//         color: $special;
-//         opacity: 0.7;
-//     }
-
-//     &-title-citation {
-//         color: primary;
-//         text-align: center;
-//         font-weight: 600;
-//         font-size: 1.1rem;
-
-//     }
-
-//     .card {
-//         display: flex;
-//         align-items: center;
-
-//         &-informations {
-//             display: inline-block;
-//             margin-left: 1em;
-
-
-//             h3 {
-//                 color: $special;
-//                 margin-bottom: 1em;
-//             }
-
-//             p {
-//                 color: $special;
-//                 opacity: 0.7;
-
-//             }
-//         }
-//     }
-
-// }
-
-
-// .container-cards {
-//     display: grid;
-//     grid-template-columns: 50% 1fr;
-//     column-gap: 70px;
-//     row-gap: 35px;
-//     padding: 3em 0;
 // }
 
 
