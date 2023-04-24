@@ -298,9 +298,10 @@ table {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  height: 750px; }
+  height: 750px;
+  /* Section : nav */
+  /* Section : job */ }
   .header .nav {
-    /* Section : nav */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -318,7 +319,6 @@ table {
   .header-menuBurger {
     align-self: center; }
   .header .job {
-    /* Section : job */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -343,25 +343,27 @@ table {
 .content {
   /* Site's content */
   margin-top: -26px;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-  background-color: #770D29;
-  color: white;
-  height: 800px; }
+  /* Section : content-intro */ }
   .content-intro {
-    /* Section : content-intro */
-    padding: 70px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+    height: 900px;
+    background-color: #770D29; }
+  .content-intro--text {
+    padding: 50px 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    color: white; }
   .content-intro--medium {
-    padding: 20px 0;
+    padding-top: 60px;
     width: 80%;
     font-family: "Sofia Sans Condensed";
     font-weight: 500;
     font-size: 24px; }
   .content-intro--italic {
+    padding-top: 60px;
     width: 80%;
     font-family: "Sofia Sans Condensed";
     font-weight: 100;

@@ -7,7 +7,8 @@
     width: 100%;
     height: 750px;
 
-    .nav { /* Section : nav */
+    /* Section : nav */
+    .nav { 
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -30,7 +31,8 @@
         align-self: center;
     }
 
-    .job { /* Section : job */
+    /* Section : job */
+    .job { 
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -62,22 +64,26 @@
 
 .content  { /* Site's content */
     margin-top: -26px;
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-    background-color: $primary;
-    color: $white;
-    height: 800px;
 
-    &-intro { /* Section : content-intro */
-        padding: 70px 0;
+    /* Section : content-intro */
+    &-intro {
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+        height: 900px;
+        background-color: $primary;
+    }
+
+    &-intro--text {
+        padding: 50px 0;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+        color: $white;
     }
 
     &-intro--medium {
-        padding: 20px 0;
+        padding-top: 60px;
         width: 80%;
         font-family: $text-font;
         font-weight: $medium-weight;
@@ -85,6 +91,7 @@
     }
 
     &-intro--italic {
+        padding-top: 60px;
         width: 80%;
         font-family: $text-font;
         font-weight: $extraLight-weight;
