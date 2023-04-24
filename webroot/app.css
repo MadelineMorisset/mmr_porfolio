@@ -343,10 +343,11 @@ table {
 .content {
   /* Site's content */
   margin-top: -26px;
-  /* Section : content-intro */ }
+  /* Section : content-intro */
+  /* Section : content-cards */ }
   .content-intro {
     clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-    height: 900px;
+    height: 800px;
     background-color: #770D29; }
   .content-intro--text {
     padding: 50px 0;
@@ -370,6 +371,31 @@ table {
     font-size: 24px; }
   .content-intro--link {
     color: white; }
+  .content-cards {
+    margin: -270px 120px 0 120px;
+    display: flex;
+    justify-content: space-around;
+    filter: drop-shadow(5px 5px 4px #A39B9C);
+    -webkit-filter: drop-shadow(2px 5px 4px #A39B9C); }
+  .content-card {
+    max-width: 25%;
+    padding: 30px;
+    clip-path: inset(0 0 0 round 35px);
+    background-color: white;
+    color: black; }
+  .content .card-logo--redCircleBG {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+    background-color: #770D29; }
+  .content .fa-code {
+    margin: 12.6px 10px; }
 
 a {
   color: #533541; }
