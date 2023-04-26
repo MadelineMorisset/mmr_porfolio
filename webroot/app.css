@@ -368,7 +368,8 @@ table {
     width: 80%;
     font-family: "Sofia Sans Condensed";
     font-weight: 100;
-    font-size: 24px; }
+    font-size: 24px;
+    font-style: italic; }
   .content-intro--link {
     color: white; }
   .content-cards {
@@ -377,25 +378,64 @@ table {
     justify-content: space-around;
     filter: drop-shadow(5px 5px 4px #A39B9C);
     -webkit-filter: drop-shadow(2px 5px 4px #A39B9C); }
-  .content-card {
-    max-width: 25%;
-    padding: 30px;
-    clip-path: inset(0 0 0 round 35px);
+  .content .card {
+    max-width: 20%;
+    padding: 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    clip-path: inset(0 0 0 round 30px);
     background-color: white;
     color: black; }
-  .content .card-logo--redCircleBG {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    border-radius: 60%;
-    -webkit-border-radius: 60%;
-    -moz-border-radius: 60%;
-    -ms-border-radius: 60%;
-    -o-border-radius: 60%;
-    background-color: #770D29; }
-  .content .fa-code {
-    margin: 12.6px 10px; }
+    .content .card-logo--redCircleBG {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin: 0 40% 30px 40%;
+      background-color: #770D29; }
+    .content .card .fa-code, .content .card .fa-bezier-curve {
+      margin: 14px 10px; }
+    .content .card .fa-icons {
+      margin: 14px 15px; }
+    .content .card-title--semiBold {
+      margin-bottom: 40px;
+      font-family: "Grenze";
+      font-weight: 600;
+      font-size: 24px; }
+    .content .card-subtitle--medium {
+      margin-bottom: 50px;
+      font-family: "Sofia Sans Condensed";
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center; }
+    .content .card-learnLove {
+      margin: 0 20% 50px 20%;
+      text-align: center; }
+    .content .card-learnLove--semiBold {
+      font-family: "Grenze";
+      font-weight: 600;
+      font-size: 18px;
+      color: #770D29; }
+    .content .card-learnLove--medium {
+      font-family: "Sofia Sans Condensed";
+      font-weight: 500;
+      font-size: 18px; }
+    .content .card-tools {
+      margin: 0 15% 50px 15%;
+      text-align: center; }
+    .content .card-tools--semiBold {
+      font-family: "Grenze";
+      font-weight: 600;
+      font-size: 18px;
+      color: #770D29; }
+    .content .card-tools--medium {
+      font-family: "Sofia Sans Condensed";
+      font-weight: 500;
+      font-size: 18px; }
 
 a {
   color: #533541; }

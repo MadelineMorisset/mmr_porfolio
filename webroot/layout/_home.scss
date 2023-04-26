@@ -96,6 +96,7 @@
         font-family: $text-font;
         font-weight: $extraLight-weight;
         font-size: $intro-size;
+        font-style: italic;
     }
 
     &-intro--link {
@@ -111,139 +112,86 @@
         -webkit-filter: drop-shadow(2px 5px 4px #A39B9C);
     }
 
-    &-card {
-        max-width: 25%;
-        padding: 30px;
-        clip-path: inset(0 0 0 round 35px);
+    .card {
+        max-width: 20%;
+        padding: 30px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        clip-path: inset(0 0 0 round 30px);
         background-color: $white;
         color: $black;
-    }
 
-    .card-logo--redCircleBG {
-        width: 60px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        border-radius: 60%;
-        -webkit-border-radius: 60%;
-        -moz-border-radius: 60%;
-        -ms-border-radius: 60%;
-        -o-border-radius: 60%;
-        background-color: $primary;
-    }
+        &-logo--redCircleBG {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin: 0 40% 30px 40%;
+            background-color: $primary;
+        }
+    
+        .fa-code, .fa-bezier-curve { // Logos of Dev and Design's sections
+            margin: 14px 10px;
+        }
+    
+        .fa-icons { // Logos of Hobbies' section
+            margin: 14px 15px;
+        }
+    
+        &-title--semiBold {
+            margin-bottom: 40px;
+            font-family: $titles-font;
+            font-weight: $semiBold-weight;
+            font-size: $h3;
+        }
+    
+        &-subtitle--medium {
+            margin-bottom: 50px;
+            font-family: $text-font;
+            font-weight: $medium-weight;
+            font-size: $card-size;
+            text-align: center;
+        }
+    
+        &-learnLove {  
+            margin: 0 20% 50px 20%;
+            text-align: center;
+        }
 
-    .fa-code {
-        margin: 12.6px 10px;
-    }
+        &-learnLove--semiBold {
+            font-family: $titles-font;
+            font-weight: $semiBold-weight;
+            font-size: $h4;
+            color: $primary;
+        }
+
+        &-learnLove--medium {
+            font-family: $text-font;
+            font-weight: $medium-weight;
+            font-size: $card-size;
+        }
+
+        &-tools {
+            margin: 0 15% 50px 15%;
+            text-align: center;
+        }
+
+        &-tools--semiBold {
+            font-family: $titles-font;
+            font-weight: $semiBold-weight;
+            font-size: $h4;
+            color: $primary;
+        }
+
+        &-tools--medium {
+            font-family: $text-font;
+            font-weight: $medium-weight;
+            font-size: $card-size;
+        }
+
+    }  
 }
-
-// .footer { /* Site's footer */
-
-// }
-
-
-// .form {
-//     display: grid;
-//     width: 46%;
-//     margin: auto;
-
-//     .label-email,
-//     .label-password {
-//         color: $special;
-//     }
-
-//     &-email,
-//     &-password,
-//     &-submit {
-//         background-color: $special;
-//         opacity: 0.2;
-//         border-radius: 2em;
-//         padding: 0.5em;
-//         border: none;
-//         color: white;
-//     }
-
-
-//     &-submit {
-//         margin-top: 3em;
-//         opacity: 1;
-//         background-color: $thirdy;
-//     }
-
-// }
-
-
-// .sidebar {
-//     background-color: $primary;
-//     padding: 2em;
-
-//     h1 {
-//         color: $white;
-//         font-weight: 600;
-//         font-size: 1.5rem;
-//         letter-spacing: 1px;
-//     }
-
-//     .block-cards {
-//         display: flex;
-//         align-items: center;
-//         padding: 2em 0 0;
-
-//         img {
-//             height: 50px;
-//             margin-right: 1em;
-//         }
-
-//         &-informations {
-//             display: inline-block;
-
-//             p {
-//                 color: $white;
-//             }
-
-//             &--stat {
-//                 display: flex;
-//                 justify-content: space-between;
-//             }
-
-//             &-colors {
-//                 color: red;
-//                 display: flex;
-//                 margin-top: 0.5em;
-
-//                 &:before {
-//                     content: '';
-//                     height: 10px;
-//                     width: 10px;
-//                     position: relative;
-//                     display: flex;
-//                     margin-right: 0.4em;
-//                 }
-//             }
-
-//             &-green {
-//                 color: $thirdy;
-
-//                 &::before {
-//                     background-color: $thirdy;
-//                 }
-//             }
-
-//             &-yellow {
-//                 color: $fourthy;
-
-//                 &::before {
-//                     background-color: $fourthy;
-//                 }
-//             }
-
-//             &-red {
-//                 color: $fifthy;
-
-//                 &::before {
-//                     background-color: $fifthy;
-//                 }
-//             }
-//         }
-//     }
-// }
