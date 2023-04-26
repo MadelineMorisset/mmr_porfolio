@@ -7,7 +7,8 @@
     width: 100%;
     height: 750px;
 
-    .nav { /* Section : nav */
+    /* Section : nav */
+    .nav { 
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -30,7 +31,8 @@
         align-self: center;
     }
 
-    .job { /* Section : job */
+    /* Section : job */
+    .job { 
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -61,120 +63,135 @@
 }
 
 .content  { /* Site's content */
-    
-    &-intro { /* Section : content-intro */
+    margin-top: -26px;
+
+    /* Section : content-intro */
+    &-intro {
         clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+        height: 800px;
         background-color: $primary;
     }
+
+    &-intro--text {
+        padding: 50px 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        color: $white;
+    }
+
+    &-intro--medium {
+        padding-top: 60px;
+        width: 80%;
+        font-family: $text-font;
+        font-weight: $medium-weight;
+        font-size: $intro-size;
+    }
+
+    &-intro--italic {
+        padding-top: 60px;
+        width: 80%;
+        font-family: $text-font;
+        font-weight: $extraLight-weight;
+        font-size: $intro-size;
+        font-style: italic;
+    }
+
+    &-intro--link {
+        color: $white;
+    }
+
+     /* Section : content-cards */
+     &-cards {
+        margin: -270px 120px 0 120px;
+        display: flex;
+        justify-content: space-around;
+        filter: drop-shadow(5px 5px 4px #A39B9C);
+        -webkit-filter: drop-shadow(2px 5px 4px #A39B9C);
+    }
+
+    .card {
+        max-width: 20%;
+        padding: 30px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        clip-path: inset(0 0 0 round 30px);
+        background-color: $white;
+        color: $black;
+
+        &-logo--redCircleBG {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin: 0 40% 30px 40%;
+            background-color: $primary;
+        }
+    
+        .fa-code, .fa-bezier-curve { // Logos of Dev and Design's sections
+            margin: 14px 10px;
+        }
+    
+        .fa-icons { // Logos of Hobbies' section
+            margin: 14px 15px;
+        }
+    
+        &-title--semiBold {
+            margin-bottom: 40px;
+            font-family: $titles-font;
+            font-weight: $semiBold-weight;
+            font-size: $h3;
+        }
+    
+        &-subtitle--medium {
+            margin-bottom: 50px;
+            font-family: $text-font;
+            font-weight: $medium-weight;
+            font-size: $card-size;
+            text-align: center;
+        }
+    
+        &-learnLove {  
+            margin: 0 20% 50px 20%;
+            text-align: center;
+        }
+
+        &-learnLove--semiBold {
+            font-family: $titles-font;
+            font-weight: $semiBold-weight;
+            font-size: $h4;
+            color: $primary;
+        }
+
+        &-learnLove--medium {
+            font-family: $text-font;
+            font-weight: $medium-weight;
+            font-size: $card-size;
+        }
+
+        &-tools {
+            margin: 0 15% 50px 15%;
+            text-align: center;
+        }
+
+        &-tools--semiBold {
+            font-family: $titles-font;
+            font-weight: $semiBold-weight;
+            font-size: $h4;
+            color: $primary;
+        }
+
+        &-tools--medium {
+            font-family: $text-font;
+            font-weight: $medium-weight;
+            font-size: $card-size;
+        }
+
+    }  
 }
-
-// .footer { /* Site's footer */
-
-// }
-
-
-// .form {
-//     display: grid;
-//     width: 46%;
-//     margin: auto;
-
-//     .label-email,
-//     .label-password {
-//         color: $special;
-//     }
-
-//     &-email,
-//     &-password,
-//     &-submit {
-//         background-color: $special;
-//         opacity: 0.2;
-//         border-radius: 2em;
-//         padding: 0.5em;
-//         border: none;
-//         color: white;
-//     }
-
-
-//     &-submit {
-//         margin-top: 3em;
-//         opacity: 1;
-//         background-color: $thirdy;
-//     }
-
-// }
-
-
-// .sidebar {
-//     background-color: $primary;
-//     padding: 2em;
-
-//     h1 {
-//         color: $white;
-//         font-weight: 600;
-//         font-size: 1.5rem;
-//         letter-spacing: 1px;
-//     }
-
-//     .block-cards {
-//         display: flex;
-//         align-items: center;
-//         padding: 2em 0 0;
-
-//         img {
-//             height: 50px;
-//             margin-right: 1em;
-//         }
-
-//         &-informations {
-//             display: inline-block;
-
-//             p {
-//                 color: $white;
-//             }
-
-//             &--stat {
-//                 display: flex;
-//                 justify-content: space-between;
-//             }
-
-//             &-colors {
-//                 color: red;
-//                 display: flex;
-//                 margin-top: 0.5em;
-
-//                 &:before {
-//                     content: '';
-//                     height: 10px;
-//                     width: 10px;
-//                     position: relative;
-//                     display: flex;
-//                     margin-right: 0.4em;
-//                 }
-//             }
-
-//             &-green {
-//                 color: $thirdy;
-
-//                 &::before {
-//                     background-color: $thirdy;
-//                 }
-//             }
-
-//             &-yellow {
-//                 color: $fourthy;
-
-//                 &::before {
-//                     background-color: $fourthy;
-//                 }
-//             }
-
-//             &-red {
-//                 color: $fifthy;
-
-//                 &::before {
-//                     background-color: $fifthy;
-//                 }
-//             }
-//         }
-//     }
-// }
