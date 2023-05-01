@@ -223,3 +223,40 @@
         }
     }
 }
+
+.footer { /* Site's footer */
+    height: 470px;
+    background-color: $primary;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-myLogo {
+        margin-top: 40px;
+        position: absolute;
+        background-image: url("../../webroot/assets/img/logoV9.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 172px;
+        width: 172px;
+        height: 172px;
+    }
+
+    .medias {
+        margin-top: 300px;
+        position: absolute;
+
+        &-facebook, &-linkedIn, &-github {
+            margin-right: 173px;
+        }
+    }
+
+    &-creationYear--medium {
+        margin-top: 420px;
+        position: relative;
+        font-family: $text-font;
+        font-weight: $medium-weight;
+        font-size: $creationYear-size;
+        color: $white;
+    }
+}
