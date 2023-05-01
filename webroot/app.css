@@ -458,6 +458,35 @@ table {
       -o-border-radius: 25px;
       box-shadow: 5px 5px 6px #A39B9C; }
 
+.footer {
+  /* Site's footer */
+  height: 470px;
+  background-color: #770D29;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .footer-myLogo {
+    margin-top: 40px;
+    position: absolute;
+    background-image: url("../../webroot/assets/img/logoV9.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 172px;
+    width: 172px;
+    height: 172px; }
+  .footer .medias {
+    margin-top: 300px;
+    position: absolute; }
+    .footer .medias-facebook, .footer .medias-linkedIn, .footer .medias-github {
+      margin-right: 173px; }
+  .footer-creationYear--medium {
+    margin-top: 420px;
+    position: relative;
+    font-family: "Sofia Sans Condensed";
+    font-weight: 500;
+    font-size: 24px;
+    color: white; }
+
 a {
   color: #533541; }
 
