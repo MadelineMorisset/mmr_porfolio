@@ -18,9 +18,6 @@
         height: 40px;
 
         &-myLogo {
-            background-image: url("../../webroot/assets/img/logoV1.svg");
-            background-position: center;
-            background-repeat: no-repeat;
             background-size: 90px;
             width: 90px;
             height: 90px;
@@ -52,10 +49,6 @@
     
         &-image {
             margin-top: -25px;
-            background-image: url("../../webroot/assets/img/webDevJob.svg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
             width: 800px;
             height: 415px;
         }
