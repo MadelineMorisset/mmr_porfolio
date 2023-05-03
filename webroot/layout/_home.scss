@@ -33,7 +33,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 40%;
+        width: 45%;
 
         &-title--semiBold {
             font-family: $titles-font;
@@ -215,10 +215,9 @@
             border-bottom: 5px solid #A39B9C;
             transition: all 0.1s;
             -webkit-transition: all 0.1s;
-            // box-shadow: 5px 5px 6px #A39B9C;
         }
 
-        &-img:active, &-img:hover {
+        &-img:hover {
             transform: translate(0px,5px);
             -webkit-transform: translate(0px,5px);
             border-bottom: 1px solid;
@@ -251,6 +250,18 @@
         &-facebook, &-linkedIn, &-github {
             margin-right: 173px;
         }
+
+        .fa-brands:hover, .fa-solid:hover {
+            animation: gelatine 0.9s 2;
+            -webkit-animation: gelatine 0.9s 2;
+        }
+        
+        @keyframes gelatine {
+            from, to { transform: scale(1, 1); }
+            25% { transform: scale(0.9, 1.1); }
+            50% { transform: scale(1.1, 0.9); }
+            75% { transform: scale(0.95, 1.05); }
+          }
     }
 
     &-creationYear--medium {
