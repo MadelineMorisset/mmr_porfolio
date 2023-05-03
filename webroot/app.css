@@ -449,7 +449,13 @@ table {
       -moz-border-radius: 25px;
       -ms-border-radius: 25px;
       -o-border-radius: 25px;
-      box-shadow: 5px 5px 6px #A39B9C; }
+      border-bottom: 5px solid #A39B9C;
+      transition: all 0.1s;
+      -webkit-transition: all 0.1s; }
+    .content .project-img:active, .content .project-img:hover {
+      transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
+      border-bottom: 1px solid; }
 
 .footer {
   /* Site's footer */
