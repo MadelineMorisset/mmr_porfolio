@@ -319,7 +319,7 @@ table {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 40%; }
+    width: 45%; }
     .header .job-title--semiBold {
       font-family: "Grenze";
       font-weight: 600;
@@ -452,7 +452,7 @@ table {
       border-bottom: 5px solid #A39B9C;
       transition: all 0.1s;
       -webkit-transition: all 0.1s; }
-    .content .project-img:active, .content .project-img:hover {
+    .content .project-img:hover {
       transform: translate(0px, 5px);
       -webkit-transform: translate(0px, 5px);
       border-bottom: 1px solid; }
@@ -478,6 +478,18 @@ table {
     position: absolute; }
     .footer .medias-facebook, .footer .medias-linkedIn, .footer .medias-github {
       margin-right: 173px; }
+    .footer .medias .fa-brands:hover, .footer .medias .fa-solid:hover {
+      animation: gelatine 0.9s 2;
+      -webkit-animation: gelatine 0.9s 2; }
+@keyframes gelatine {
+  from, to {
+    transform: scale(1, 1); }
+  25% {
+    transform: scale(0.9, 1.1); }
+  50% {
+    transform: scale(1.1, 0.9); }
+  75% {
+    transform: scale(0.95, 1.05); } }
   .footer-creationYear--medium {
     margin-top: 420px;
     position: relative;
