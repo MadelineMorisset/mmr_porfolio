@@ -218,6 +218,10 @@
         }
 
         &-img:hover {
+            opacity: 0.8;
+        }
+
+        &-img:active {
             transform: translate(0px,5px);
             -webkit-transform: translate(0px,5px);
             border-bottom: 1px solid;
@@ -261,7 +265,11 @@
             25% { transform: scale(0.9, 1.1); }
             50% { transform: scale(1.1, 0.9); }
             75% { transform: scale(0.95, 1.05); }
-          }
+        }
+
+        .fa-brands:active, .fa-solid:active {
+            opacity: 0.8;
+        }
     }
 
     &-creationYear--medium {

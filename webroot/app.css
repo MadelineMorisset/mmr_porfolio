@@ -453,6 +453,8 @@ table {
       transition: all 0.1s;
       -webkit-transition: all 0.1s; }
     .content .project-img:hover {
+      opacity: 0.8; }
+    .content .project-img:active {
       transform: translate(0px, 5px);
       -webkit-transform: translate(0px, 5px);
       border-bottom: 1px solid; }
@@ -490,6 +492,8 @@ table {
     transform: scale(1.1, 0.9); }
   75% {
     transform: scale(0.95, 1.05); } }
+    .footer .medias .fa-brands:active, .footer .medias .fa-solid:active {
+      opacity: 0.8; }
   .footer-creationYear--medium {
     margin-top: 420px;
     position: relative;
