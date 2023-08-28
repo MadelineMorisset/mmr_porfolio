@@ -24,24 +24,83 @@
         }
     
         &-menuBurger {
+            display: flex; 
+            justify-content: end;
             align-self: center;
-        }   
+
+            &--button {
+                width: 55px;
+                height: 55px;
+                border-bottom: 4px solid $shadowDark;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $primary;
+            }
+
+            &--button:active {
+                border-bottom: 1px solid $shadowDark;
+                box-shadow: inset 4px 4px $secondaryInset;
+            }
+
+            .fa-bars {
+                width: 60%;
+                height: auto;
+                color: $white;
+            }
+
+            &--menu {
+                position: absolute;
+                z-index: 1;
+                margin-top: 0;
+                margin-right: 80px;
+                padding: 8px 14px;
+                width: 150px;
+                border-radius: 8px;
+                background-color: $primary;
+                text-align: center;
+            }
+
+            .visibilityNav {
+                visibility: hidden;
+            }
+        }
     }
+
+// .titleBox {padding: 8px 0;}
+
+// .titleHeader {margin: 8px 0;}
+
+// .fontSize12px {font-size: $links-menu;}
+
+// .navUserAccount {
+//     display: flex;
+//     flex-wrap: wrap; 
+//     justify-content: end;
+// }
+
+// .navUserAccountLinks {
+//     width: 156px;
+// }
 
     /* Section : job */
     .job { 
+        width: 45%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 45%;
+        text-align: center;
 
         &-title--semiBold {
+            width: 100%;
             font-family: $titles-font;
             font-weight: $semiBold-weight;
             font-size: $h1;
         }
     
         &-subtitle--medium {
+            width: 100%;
             font-family: $text-font;
             font-weight: $medium-weight;
             font-size: $subtitle-size;
