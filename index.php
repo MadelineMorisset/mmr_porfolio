@@ -70,15 +70,21 @@
   <section class="content-projects">
     <h2 class="content-projects--semiBold">Mes projets</h2>
     <section class="project">
-      <a href="https://madelinemorisset.github.io/2016_2DProd_V.2/index.html">
-        <img src="webroot/assets/img/mockup2DProd.png" alt="2D Prod sandbox site" title="2D Prod" class="project-img">
-      </a>
-      <a href="https://madelinemorisset.github.io/MadelineMorisset_P2_20042021/">
-        <img src="webroot/assets/img/mockupReservia.png" alt="Reservia, OpenClassrooms Project" title="Reservia" class="project-img">
-      </a>
-      <a href="">
-        <img src="webroot/assets/img/mockupPortfolio.png" alt="My portfolio" title="Portfolio 2023" class="project-img">
-      </a>
+      <article class="card card-projects">
+        <a href="https://madelinemorisset.github.io/2016_2DProd_V.2/index.html">
+          <img src="webroot/assets/img/mockup2DProd.png" alt="2D Prod sandbox site" title="2D Prod" class="project-img">
+        </a>
+      </article>
+      <article class="card card-projects">
+        <a href="https://madelinemorisset.github.io/MadelineMorisset_P2_20042021/">
+          <img src="webroot/assets/img/mockupReservia.png" alt="Reservia, OpenClassrooms Project" title="Reservia" class="project-img">
+        </a>
+      </article>
+      <article class="card card-projects">
+        <a href="">
+          <img src="webroot/assets/img/mockupPortfolio.png" alt="My portfolio" title="Portfolio 2023" class="project-img">
+        </a>
+      </article>
     </section>
   </section>
 </main>

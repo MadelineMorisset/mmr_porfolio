@@ -320,7 +320,7 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-  padding: 50px 50px 50px;
+  padding: 50px;
   width: 100%;
   height: 40px;
 }
@@ -408,12 +408,14 @@ table {
   font-size: 2em;
 }
 .header .job-image {
-  margin-top: -25px;
+  margin-top: -29px;
+  margin-left: -6px;
   width: 800px;
   height: 415px;
 }
 
 .content { /* Site's content */
+  width: 100%;
   margin-top: -26px;
   /* Section : content-intro */
   /* Section : content-cards */
@@ -422,11 +424,12 @@ table {
 .content-intro {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
           clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-  height: 800px;
+  height: 750px;
+  margin-bottom: 80px;
+  padding: 50px 150px 0 150px;
   background-color: #770D29;
 }
 .content-intro--text {
-  padding: 50px 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -435,15 +438,15 @@ table {
   color: white;
 }
 .content-intro--medium {
-  padding-top: 60px;
-  width: 80%;
+  width: 100%;
+  padding: 30px 0;
   font-family: "Sofia Sans Condensed";
   font-weight: 500;
   font-size: 1.5em;
 }
 .content-intro--italic {
-  padding-top: 60px;
-  width: 80%;
+  width: 100%;
+  padding: 30px 0;
   font-family: "Sofia Sans Condensed";
   font-weight: 100;
   font-size: 1.5em;
@@ -453,11 +456,21 @@ table {
   color: white;
 }
 .content-cards {
-  margin: -270px 120px 0 120px;
+  margin-top: -350px;
+  padding: 0 150px;
   display: flex;
   justify-content: space-around;
   filter: drop-shadow(5px 5px 4px #A39B9C);
-  -webkit-filter: drop-shadow(5px 5px 4px #A39B9C);
+}
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .content-cards {
+    margin-top: -280px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1402px) {
+  .content-cards {
+    margin-top: -300px;
+  }
 }
 .content .card {
   max-width: 20%;
@@ -466,6 +479,7 @@ table {
   flex-wrap: wrap;
   justify-content: center;
   align-content: baseline;
+  text-align: center;
   -webkit-clip-path: inset(0 0 0 round 30px);
           clip-path: inset(0 0 0 round 30px);
   background-color: white;
@@ -475,10 +489,6 @@ table {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   margin: 0 40% 30px 40%;
   background-color: #770D29;
 }
@@ -489,12 +499,14 @@ table {
   margin: 14px 15px;
 }
 .content .card-title--semiBold {
+  width: 100%;
   margin-bottom: 40px;
   font-family: "Grenze";
   font-weight: 600;
   font-size: 1.5em;
 }
 .content .card-subtitle--medium {
+  width: 100%;
   height: 54px;
   margin-bottom: 50px;
   font-family: "Sofia Sans Condensed";
@@ -503,7 +515,8 @@ table {
   text-align: center;
 }
 .content .card-learnLove {
-  margin: 0 20% 50px 20%;
+  width: 100%;
+  margin-bottom: 20px;
   text-align: center;
 }
 .content .card-learnLove--semiBold {
@@ -518,7 +531,7 @@ table {
   font-size: 1.125em;
 }
 .content .card-tools {
-  margin: 0 15% 50px 15%;
+  margin: 0 15% 20px 15%;
   text-align: center;
 }
 .content .card-tools--semiBold {
@@ -536,27 +549,29 @@ table {
   margin: 150px 120px;
 }
 .content-projects--semiBold {
+  width: 100%;
   font-family: "Grenze";
   font-weight: 600;
   font-size: 2.5em;
   text-align: center;
 }
 .content .project {
-  margin-top: 120px;
   display: flex;
   justify-content: space-around;
+  margin-top: 120px;
 }
-.content .project-img {
-  width: auto;
+.content .project .card-projects {
+  max-width: 30%;
   max-height: 254px;
+  padding: 0;
   border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
   border-bottom: 5px solid #A39B9C;
   transition: all 0.1s;
-  -webkit-transition: all 0.1s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .project-img {
+  max-height: 254px;
 }
 .content .project-img:hover {
   opacity: 0.8;

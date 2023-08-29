@@ -10,12 +10,8 @@
     <link rel="shortcut icon" href="webroot/assets/img/logoV1.ico" type="image/x-icon">
     <!-- Kit Font Awesome -->
     <script src="https://kit.fontawesome.com/23c1a897ea.js" crossorigin="anonymous"></script>
-    <!-- JS, React et Babel -->
+    <!-- JS -->
     <script src="app.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/react@17/umd/react.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
-    <script type="text/babel" src="src/index.js"></script> -->
 
     <title>Portfolio - MMorisset</title>
     <meta name="author" content="MMORISSET"/>
