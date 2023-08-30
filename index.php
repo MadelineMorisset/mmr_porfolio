@@ -31,7 +31,7 @@
       <p class="card-subtitle--medium">Après la formation Développement Web et Web Mobile, j’apprend le Back end et le Front end, mais j’ai une forte appétence pour le Front.</p>
       <section class="card-learnLove">
         <h4 class="card-learnLove--semiBold">Ce que j’apprends :</h4>
-        <p class="card-learnLove--medium">HTML, CSS, PHP, SQL, JS</p>
+        <p class="card-learnLove--medium">HTML<br>CSS<br>PHP<br>SQL<br>JS</p>
       </section>
       <section class="card-tools">
         <h4 class="card-tools--semiBold">Outils de développement :</h4>
@@ -46,7 +46,7 @@
       <p class="card-subtitle--medium">J’apprends le Design sur mon temps libre, par envie d’apprendre, mais également pour faciliter et améliorer mes projets personnels.</p>
       <section class="card-learnLove">
         <h4 class="card-learnLove--semiBold">Ce que j’apprends :</h4>
-        <p class="card-learnLove--medium">UX, UI, Web, Logos</p>
+        <p class="card-learnLove--medium">UX<br>UI<br>Web<br>Logos</p>
       </section>
       <section class="card-tools">
         <h4 class="card-tools--semiBold">Outils de conception :</h4>
@@ -69,18 +69,18 @@
   <!-- My past projects -->
   <section class="content-projects">
     <h2 class="content-projects--semiBold">Mes projets</h2>
-    <section class="project">
-      <article class="card card-projects">
+    <section class="projects">
+      <article class="card project">
         <a href="https://madelinemorisset.github.io/2016_2DProd_V.2/index.html">
           <img src="webroot/assets/img/mockup2DProd.png" alt="2D Prod sandbox site" title="2D Prod" class="project-img">
         </a>
       </article>
-      <article class="card card-projects">
+      <article class="card project">
         <a href="https://madelinemorisset.github.io/MadelineMorisset_P2_20042021/">
           <img src="webroot/assets/img/mockupReservia.png" alt="Reservia, OpenClassrooms Project" title="Reservia" class="project-img">
         </a>
       </article>
-      <article class="card card-projects">
+      <article class="card project">
         <a href="">
           <img src="webroot/assets/img/mockupPortfolio.png" alt="My portfolio" title="Portfolio 2023" class="project-img">
         </a>

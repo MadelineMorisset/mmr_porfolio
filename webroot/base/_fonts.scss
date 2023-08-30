@@ -13,13 +13,13 @@ $medium-weight:   500; /* Regular text */
 $semiBold-weight: 600; /* Titles */
 
 /* Fonts size : titles */
-$h1: 4em; /* In header > job */
-$h2: 2.5em; /* In content > content-projects */
-$h3: 1.5em; /* In content > content-cards > card */
-$h4: 1.125em; /* In content > content-cards > card > card-learnLove */
+$h1: 4em; /* In header > job = 64px */
+$h2: 2.5em; /* In content > content-projects = 40px */
+$h3: 1.5em; /* In content > content-cards > card = 24px */
+$h4: 1.125em; /* In content > content-cards > card > card-learnLove = 18px */
 
 /* Fonts size : text */
-$subtitle-size: 2em; /* In header > job */
-$intro-size: 1.5em; /* In content > content-intro */
-$card-size: 1.125em; /* In content > content-cards */
-$links-menu: 0.75em; /* In header > nav */
+$size-32: 2em; /* In header > job = 32px */
+$size-24: 1.5em; /* In content > content-intro = 24px */
+$size-18: 1.125em; /* In content > content-cards = 18px */
+$links-menu: 0.75em; /* In header > nav = 12px */

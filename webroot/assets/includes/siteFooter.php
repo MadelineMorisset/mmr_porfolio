@@ -1,6 +1,8 @@
     <footer class="footer">
-        <img src="webroot/assets/img/logoV9.svg" alt="Red and white portfolio's logo" class="footer-myLogo">
-        <section class="medias">
+        <section class="footer-sections">
+            <img src="webroot/assets/img/logoV9.svg" alt="Red and white portfolio's logo" class="footer-sections--logo">
+        </section>
+        <section class="footer-sections medias">
             <a href="https://www.facebook.com/madeline.morisset" class="medias-facebook">
                 <i class="fa-brands fa-square-facebook fa-3x" style="color: #ffffff;"></i>
             </a>
@@ -14,10 +16,12 @@
                 <i class="fa-solid fa-envelope fa-3x" style="color: #ffffff;"></i>
             </a>
         </section>
-        <p class="footer-creationYear--medium">@madelinemorisset2023</p>
+        <section class="footer-sections">
+            <p class="footer-sections--medium">@madelinemorisset2023</p>
+        </section>
     </footer>
 
-    <!--  -->
+    <!-- Script React dev -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   </body>

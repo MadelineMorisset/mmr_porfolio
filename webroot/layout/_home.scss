@@ -66,6 +66,11 @@
                 background-color: $primary;
             }
 
+            @media screen and (min-width: 1024px) and (max-width: 1299px) {
+                flex-wrap: nowrap;
+                width: 550px;
+            }
+
             .visibilityNav {
                 visibility: hidden;
             }
@@ -82,12 +87,26 @@
                 text-decoration: none;
                 font-family: $titles-font;
                 font-weight: $semiBold-weight;
-                font-size: $card-size;
+                font-size: $size-18;
                 color: $white;
+            }
+
+            @media screen and (min-width: 1024px) and (max-width: 1299px) {
+                &--link:hover {
+                    text-decoration: underline;
+                }
+
+                &--link:active {
+                    color: $shadowLight;
+                }
             }
 
             &--separationLine {
                 border-bottom: 2px solid $white;
+            }
+
+            @media screen and (min-width: 1024px) and (max-width: 1299px) {
+                border-right: 2px solid $white;
             }
         }
     }
@@ -111,7 +130,7 @@
             width: 100%;
             font-family: $text-font;
             font-weight: $medium-weight;
-            font-size: $subtitle-size;
+            font-size: $size-32;
         }
     
         &-image {
@@ -149,7 +168,7 @@
             padding: 30px 0;
             font-family: $text-font;
             font-weight: $medium-weight;
-            font-size: $intro-size;
+            font-size: $size-24;
         }
     
         &--italic {
@@ -157,7 +176,7 @@
             padding: 30px 0;
             font-family: $text-font;
             font-weight: $extraLight-weight;
-            font-size: $intro-size;
+            font-size: $size-24;
             font-style: italic;
         }
     
@@ -174,7 +193,19 @@
         justify-content: space-around;
         filter: drop-shadow(5px 5px 4px #A39B9C);
 
-        @media screen and (min-width: 1024px) and (max-width: 1299px) {
+        @media screen and (min-width: 780px) and (max-width: 979px) {
+            height: 1400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            margin-top: -280px;
+        }
+
+        @media screen and (min-width: 980px) and (max-width: 1299px) {
+            height: 1400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
             margin-top: -280px;
         }
 
@@ -195,8 +226,12 @@
         background-color: $white;
         color: $black;
 
+        @media screen and (min-width: 980px) and (max-width: 1023px) {
+            max-width: 80%;
+        }
+
         @media screen and (min-width: 1024px) and (max-width: 1299px) {
-            
+            max-width: 60%;
         }
 
         &-logo--redCircleBG {
@@ -229,7 +264,7 @@
             margin-bottom: 50px;
             font-family: $text-font;
             font-weight: $medium-weight;
-            font-size: $card-size;
+            font-size: $size-18;
             text-align: center;
         }
     
@@ -237,43 +272,52 @@
             width: 100%;
             margin-bottom: 20px;
             text-align: center;
-        }
 
-        &-learnLove--semiBold {
-            font-family: $titles-font;
-            font-weight: $semiBold-weight;
-            font-size: $h4;
-            color: $primary;
-        }
-
-        &-learnLove--medium {
-            font-family: $text-font;
-            font-weight: $medium-weight;
-            font-size: $card-size;
+            @media screen and (min-width: 980px) and (max-width: 1299px) {
+                width: 50%;
+            }
+            
+            &--semiBold {
+                font-family: $titles-font;
+                font-weight: $semiBold-weight;
+                font-size: $h4;
+                color: $primary;
+            }
+    
+            &--medium {
+                font-family: $text-font;
+                font-weight: $medium-weight;
+                font-size: $size-18;
+            }
         }
 
         &-tools {
-            margin: 0 15% 20px 15%;
+            width: 100%;
+            margin-bottom:20px;
             text-align: center;
-        }
 
-        &-tools--semiBold {
-            font-family: $titles-font;
-            font-weight: $semiBold-weight;
-            font-size: $h4;
-            color: $primary;
-        }
+            @media screen and (min-width: 980px) and (max-width: 1299px) {
+                width: 50%;
+            }
 
-        &-tools--medium {
-            font-family: $text-font;
-            font-weight: $medium-weight;
-            font-size: $card-size;
+            &--semiBold {
+                font-family: $titles-font;
+                font-weight: $semiBold-weight;
+                font-size: $h4;
+                color: $primary;
+            }
+    
+            &--medium {
+                font-family: $text-font;
+                font-weight: $medium-weight;
+                font-size: $size-18;
+            }
         }
     }
 
     /* Section : content-projects */
     &-projects {
-        margin: 150px 120px;
+        margin: 120px;
 
         &--semiBold {
             width: 100%;
@@ -284,68 +328,93 @@
         }
     }
 
-    .project {
+    .projects {
         display: flex;
         justify-content: space-around;
         margin-top: 120px;
 
-        .card-projects {
+        @media screen and (min-width: 980px) and (max-width: 1299px) {
+            height: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        .project {
             max-width: 30%;
-            max-height: 254px;
-            padding: 0;
-            border-radius: 25px;
-            border-bottom: 5px solid #A39B9C;
-            transition: all 0.1s;
-            object-fit: cover;
-        }
 
-        &-img {
-            max-height: 254px;
-        }
+            @media screen and (min-width: 980px) and (max-width: 1023px) {
+                max-width: 100%;
+            }
 
-        &-img:hover {
-            opacity: 0.8;
-        }
+            @media screen and (min-width: 1024px) and (max-width: 1299px) {
+                max-width: 80%;
+            }
 
-        &-img:active {
-            transform: translate(0px,5px);
-            -webkit-transform: translate(0px,5px);
-            border-bottom: 1px solid;
+            &-img {
+                max-height: 254px;
+                border-radius: 25px;
+                border-bottom: 5px solid #A39B9C;
+                object-fit: cover;
+                transition: all 0.1s;
+            }
+    
+            &-img:hover {
+                opacity: 0.8;
+            }
+    
+            &-img:active {
+                transform: translate(0px,5px);
+                -webkit-transform: translate(0px,5px);
+                border-bottom: 1px solid;
+            }
         }
     }
 }
 
 .footer { /* Site's footer */
     height: 370px;
+    padding: 40px 120px 0 120px;
     background-color: $primary;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    &-myLogo {
-        margin-top: 40px;
-        position: absolute;
-        background-image: url("../../webroot/assets/img/logoV9.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 140px;
-        width: 140px;
-        height: 140px;
+    &-sections {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        &--logo {
+            background-image: url("../../webroot/assets/img/logoV9.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 140px;
+            width: 140px;
+            height: 140px;
+        }
+
+        &--medium {
+            height: auto;
+            font-family: $text-font;
+            font-weight: $medium-weight;
+            font-size: $size-24;
+            color: $white;
+        }
     }
 
     .medias {
-        margin-top: 230px;
-        position: absolute;
-
-        &-facebook, &-linkedIn, &-github {
-            margin-right: 250px;
-        }
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
 
         .fa-brands:hover, .fa-solid:hover {
-            animation: gelatine 0.9s 2;
-            -webkit-animation: gelatine 0.9s 2;
+            animation: gelatine 0.9s 2s;
+            -webkit-animation: gelatine 0.9s 2s;
         }
-        
+
         @keyframes gelatine {
             from, to { transform: scale(1, 1); }
             25% { transform: scale(0.9, 1.1); }
@@ -356,14 +425,5 @@
         .fa-brands:active, .fa-solid:active {
             opacity: 0.8;
         }
-    }
-
-    &-creationYear--medium {
-        margin-top: 330px;
-        position: relative;
-        font-family: $text-font;
-        font-weight: $medium-weight;
-        font-size: $card-size;
-        color: $white;
     }
 }

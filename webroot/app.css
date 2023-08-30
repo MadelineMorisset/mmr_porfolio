@@ -146,15 +146,15 @@ table {
 /* Regular text */
 /* Titles */
 /* Fonts size : titles */
-/* In header > job */
-/* In content > content-projects */
-/* In content > content-cards > card */
-/* In content > content-cards > card > card-learnLove */
+/* In header > job = 64px */
+/* In content > content-projects = 40px */
+/* In content > content-cards > card = 24px */
+/* In content > content-cards > card > card-learnLove = 18px */
 /* Fonts size : text */
-/* In header > job */
-/* In content > content-intro */
-/* In content > content-cards */
-/* In header > nav */
+/* In header > job = 32px */
+/* In content > content-intro = 24px */
+/* In content > content-cards = 18px */
+/* In header > nav = 12px */
 html,
 body,
 div,
@@ -297,15 +297,15 @@ table {
 /* Regular text */
 /* Titles */
 /* Fonts size : titles */
-/* In header > job */
-/* In content > content-projects */
-/* In content > content-cards > card */
-/* In content > content-cards > card > card-learnLove */
+/* In header > job = 64px */
+/* In content > content-projects = 40px */
+/* In content > content-cards > card = 24px */
+/* In content > content-cards > card > card-learnLove = 18px */
 /* Fonts size : text */
-/* In header > job */
-/* In content > content-intro */
-/* In content > content-cards */
-/* In header > nav */
+/* In header > job = 32px */
+/* In content > content-intro = 24px */
+/* In content > content-cards = 18px */
+/* In header > nav = 12px */
 .header { /* Site's header */
   display: flex;
   flex-wrap: wrap;
@@ -368,6 +368,12 @@ table {
   text-align: center;
   background-color: #770D29;
 }
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .header .nav-menuBurger {
+    flex-wrap: nowrap;
+    width: 550px;
+  }
+}
 .header .nav-menuBurger .visibilityNav {
   visibility: hidden;
 }
@@ -385,8 +391,21 @@ table {
   font-size: 1.125em;
   color: white;
 }
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .header .nav-menuBurger--link:hover {
+    text-decoration: underline;
+  }
+  .header .nav-menuBurger--link:active {
+    color: #d1d1d1;
+  }
+}
 .header .nav-menuBurger--separationLine {
   border-bottom: 2px solid white;
+}
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .header .nav-menuBurger {
+    border-right: 2px solid white;
+  }
 }
 .header .job {
   width: 100%;
@@ -462,8 +481,21 @@ table {
   justify-content: space-around;
   filter: drop-shadow(5px 5px 4px #A39B9C);
 }
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
+@media screen and (min-width: 780px) and (max-width: 979px) {
   .content-cards {
+    height: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: -280px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1299px) {
+  .content-cards {
+    height: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     margin-top: -280px;
   }
 }
@@ -484,6 +516,16 @@ table {
           clip-path: inset(0 0 0 round 30px);
   background-color: white;
   color: black;
+}
+@media screen and (min-width: 980px) and (max-width: 1023px) {
+  .content .card {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .content .card {
+    max-width: 60%;
+  }
 }
 .content .card-logo--redCircleBG {
   width: 60px;
@@ -519,6 +561,11 @@ table {
   margin-bottom: 20px;
   text-align: center;
 }
+@media screen and (min-width: 980px) and (max-width: 1299px) {
+  .content .card-learnLove {
+    width: 50%;
+  }
+}
 .content .card-learnLove--semiBold {
   font-family: "Grenze";
   font-weight: 600;
@@ -531,8 +578,14 @@ table {
   font-size: 1.125em;
 }
 .content .card-tools {
-  margin: 0 15% 20px 15%;
+  width: 100%;
+  margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 980px) and (max-width: 1299px) {
+  .content .card-tools {
+    width: 50%;
+  }
 }
 .content .card-tools--semiBold {
   font-family: "Grenze";
@@ -546,7 +599,7 @@ table {
   font-size: 1.125em;
 }
 .content-projects {
-  margin: 150px 120px;
+  margin: 120px;
 }
 .content-projects--semiBold {
   width: 100%;
@@ -555,28 +608,44 @@ table {
   font-size: 2.5em;
   text-align: center;
 }
-.content .project {
+.content .projects {
   display: flex;
   justify-content: space-around;
   margin-top: 120px;
 }
-.content .project .card-projects {
+@media screen and (min-width: 980px) and (max-width: 1299px) {
+  .content .projects {
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+.content .projects .project {
   max-width: 30%;
+}
+@media screen and (min-width: 980px) and (max-width: 1023px) {
+  .content .projects .project {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .content .projects .project {
+    max-width: 80%;
+  }
+}
+.content .projects .project-img {
   max-height: 254px;
-  padding: 0;
   border-radius: 25px;
   border-bottom: 5px solid #A39B9C;
-  transition: all 0.1s;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.1s;
 }
-.content .project-img {
-  max-height: 254px;
-}
-.content .project-img:hover {
+.content .projects .project-img:hover {
   opacity: 0.8;
 }
-.content .project-img:active {
+.content .projects .project-img:active {
   transform: translate(0px, 5px);
   -webkit-transform: translate(0px, 5px);
   border-bottom: 1px solid;
@@ -584,14 +653,20 @@ table {
 
 .footer { /* Site's footer */
   height: 370px;
+  padding: 40px 120px 0 120px;
   background-color: #770D29;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.footer-myLogo {
-  margin-top: 40px;
-  position: absolute;
+.footer-sections {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.footer-sections--logo {
   background-image: url("../../webroot/assets/img/logoV9.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -599,16 +674,21 @@ table {
   width: 140px;
   height: 140px;
 }
-.footer .medias {
-  margin-top: 230px;
-  position: absolute;
+.footer-sections--medium {
+  height: auto;
+  font-family: "Sofia Sans Condensed";
+  font-weight: 500;
+  font-size: 1.5em;
+  color: white;
 }
-.footer .medias-facebook, .footer .medias-linkedIn, .footer .medias-github {
-  margin-right: 250px;
+.footer .medias {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 .footer .medias .fa-brands:hover, .footer .medias .fa-solid:hover {
-  animation: gelatine 0.9s 2;
-  -webkit-animation: gelatine 0.9s 2;
+  animation: gelatine 0.9s 2s;
+  -webkit-animation: gelatine 0.9s 2s;
 }
 @keyframes gelatine {
   from, to {
@@ -626,14 +706,6 @@ table {
 }
 .footer .medias .fa-brands:active, .footer .medias .fa-solid:active {
   opacity: 0.8;
-}
-.footer-creationYear--medium {
-  margin-top: 330px;
-  position: relative;
-  font-family: "Sofia Sans Condensed";
-  font-weight: 500;
-  font-size: 1.125em;
-  color: white;
 }
 
 a {
