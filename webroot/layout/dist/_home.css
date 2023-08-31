@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze:wght@600&family=Sofia+Sans+Condensed:wght@500&display=swap");
 html,
 body,
 div,
@@ -155,158 +152,8 @@ table {
 /* In content > content-intro = 24px */
 /* In content > content-cards = 18px */
 /* In header > nav = 12px */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Fonts import */
-/* Grenze SemiBold 600 */
-/* Sofia Sans Condensed ExtraLight 200 Italic */
-/* Sofia Sans Condensed Medium 500 */
-/* Fonts definition */
-/* Titles (to exception of menu' links) */
-/* Text */
-/* Fonts weight */
-/* Italic text */
-/* Regular text */
-/* Titles */
-/* Fonts size : titles */
-/* In header > job = 64px */
-/* In content > content-projects = 40px */
-/* In content > content-cards > card = 24px */
-/* In content > content-cards > card > card-learnLove = 18px */
-/* Fonts size : text */
-/* In header > job = 32px */
-/* In content > content-intro = 24px */
-/* In content > content-cards = 18px */
-/* In header > nav = 12px */
-.header { /* Site's header */
+.header {
+  /* Site's header */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -346,7 +193,7 @@ table {
 }
 .header .nav-menuBurger--button:active {
   border-bottom: 1px solid #9c9596;
-  box-shadow: inset 4px 4px rgba(83, 53, 65, 0.8);
+  box-shadow: inset 4px 4px #533541cc;
 }
 .header .nav-menuBurger .fa-bars {
   width: 60%;
@@ -433,7 +280,8 @@ table {
   height: 415px;
 }
 
-.content { /* Site's content */
+.content {
+  /* Site's content */
   width: 100%;
   margin-top: -26px;
   /* Section : content-intro */
@@ -441,8 +289,7 @@ table {
   /* Section : content-projects */
 }
 .content-intro {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
-          clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
   height: 750px;
   margin-bottom: 80px;
   padding: 50px 150px 0 150px;
@@ -520,8 +367,7 @@ table {
   justify-content: center;
   align-content: baseline;
   text-align: center;
-  -webkit-clip-path: inset(0 0 0 round 30px);
-          clip-path: inset(0 0 0 round 30px);
+  clip-path: inset(0 0 0 round 30px);
   background-color: white;
   color: black;
 }
@@ -652,14 +498,12 @@ table {
   max-height: 254px;
   border-radius: 25px;
   border-bottom: 5px solid #A39B9C;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.1s;
 }
 @media screen and (min-width: 780px) and (max-width: 1161px) {
   .content .projects .project-img {
     width: 580px;
-    max-height: -moz-fit-content;
     max-height: fit-content;
   }
 }
@@ -678,7 +522,8 @@ table {
   border-bottom: 1px solid;
 }
 
-.footer { /* Site's footer */
+.footer {
+  /* Site's footer */
   height: 370px;
   padding: 40px 120px 0 120px;
   background-color: #770D29;
@@ -768,7 +613,3 @@ table {
     transform: none;
   }
 }
-
-a {
-  color: #533541;
-}/*# sourceMappingURL=app.css.map */
