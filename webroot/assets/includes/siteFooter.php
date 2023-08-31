@@ -4,16 +4,24 @@
         </section>
         <section class="footer-sections medias">
             <a href="https://www.facebook.com/madeline.morisset" class="medias-facebook">
-                <i class="fa-brands fa-square-facebook fa-3x" style="color: #ffffff;"></i>
+                <section class="medias-sections">
+                    <i class="fa-brands fa-square-facebook medias-sections--logo"></i>
+                </section>
             </a>
             <a href="https://www.linkedin.com/in/madelinemorisset" class="medias-linkedIn">
-                <i class="fa-brands fa-linkedin fa-3x" style="color: #ffffff;"></i>
+                <section class="medias-sections">
+                    <i class="fa-brands fa-linkedin medias-sections--logo"></i>
+                </section>
             </a>
             <a href="https://github.com/MadelineMorisset?tab=repositories" class="medias-github">
-                <i class="fa-brands fa-square-github fa-3x" style="color: #ffffff;"></i>
+                <section class="medias-sections">
+                    <i class="fa-brands fa-square-github medias-sections--logo"></i>
+                </section>
             </a>
             <a href="mailto:madeline.morisset@outlook.fr" class="medias-eMail">
-                <i class="fa-solid fa-envelope fa-3x" style="color: #ffffff;"></i>
+                <section class="medias-sections">
+                    <i class="fa-solid fa-envelope medias-sections--logo"></i>
+                </section>
             </a>
         </section>
         <section class="footer-sections">

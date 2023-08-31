@@ -410,20 +410,60 @@
         display: flex;
         justify-content: space-between;
 
-        .fa-brands:hover, .fa-solid:hover {
-            animation: gelatine 0.9s 2s;
-            -webkit-animation: gelatine 0.9s 2s;
+        &-sections {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 35px;
+            background-color: $white;
+
+
+            &--logo {
+                width: 35px;
+                height: auto;
+                color: $primary;
+            }
+        }
+
+        &-sections:hover {
+            animation: gelatine 2s infinite;
+            transform-origin: center;
+        }
+
+        &-sections:active {
+            opacity: 0.6;
         }
 
         @keyframes gelatine {
-            from, to { transform: scale(1, 1); }
-            25% { transform: scale(0.9, 1.1); }
-            50% { transform: scale(1.1, 0.9); }
-            75% { transform: scale(0.95, 1.05); }
-        }
-
-        .fa-brands:active, .fa-solid:active {
-            opacity: 0.8;
+            11% {
+                transform: none;
+            }
+            22% {
+                transform: skew(-12.5deg,-12.5deg);
+            } 
+            33% {
+                transform: skew(6.25deg, 6.25deg);
+            }
+            44% {
+                transform: skew(-3.125deg,-3.125deg);
+            }
+            55% {
+                transform: skew(1.5625deg, 1.5625deg);
+            }
+            66% {
+                transform: skew(-0.78125deg, -0.78125deg);
+            }
+            77% {
+                transform: skew(0.390625deg, 0.390625deg);
+            }
+            88% {
+                transform: skew(-0.1953125deg, -0.1953125deg);
+            }
+            100% {
+                transform: none;
+            }
         }
     }
 }
