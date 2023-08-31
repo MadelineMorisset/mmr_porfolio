@@ -215,7 +215,7 @@ table {
   text-align: center;
   background-color: #770D29;
 }
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
+@media screen and (min-width: 1162px) and (max-width: 1289px) {
   .header .nav-menuBurger {
     flex-wrap: nowrap;
     width: 550px;
@@ -238,7 +238,7 @@ table {
   font-size: 1.125em;
   color: white;
 }
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
+@media screen and (min-width: 1162px) and (max-width: 1289px) {
   .header .nav-menuBurger--link:hover {
     text-decoration: underline;
   }
@@ -249,7 +249,7 @@ table {
 .header .nav-menuBurger--separationLine {
   border-bottom: 2px solid white;
 }
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
+@media screen and (min-width: 1162px) and (max-width: 1289px) {
   .header .nav-menuBurger {
     border-right: 2px solid white;
   }
@@ -295,6 +295,12 @@ table {
   padding: 50px 150px 0 150px;
   background-color: #770D29;
 }
+@media screen and (min-width: 780px) and (max-width: 979px) {
+  .content-intro {
+    height: 850px;
+    padding: 50px 100px 0 100px;
+  }
+}
 .content-intro--text {
   width: 100%;
   display: flex;
@@ -331,13 +337,14 @@ table {
 @media screen and (min-width: 780px) and (max-width: 979px) {
   .content-cards {
     height: 1400px;
+    padding: 0 100px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    margin-top: -280px;
+    margin-top: -340px;
   }
 }
-@media screen and (min-width: 980px) and (max-width: 1299px) {
+@media screen and (min-width: 980px) and (max-width: 1289px) {
   .content-cards {
     height: 1400px;
     display: flex;
@@ -346,9 +353,10 @@ table {
     margin-top: -280px;
   }
 }
-@media screen and (min-width: 1280px) and (max-width: 1402px) {
+@media screen and (min-width: 1290px) and (max-width: 1402px) {
   .content-cards {
     margin-top: -300px;
+    justify-content: space-between;
   }
 }
 .content .card {
@@ -363,14 +371,9 @@ table {
   background-color: white;
   color: black;
 }
-@media screen and (min-width: 980px) and (max-width: 1023px) {
+@media screen and (min-width: 780px) and (max-width: 1289px) {
   .content .card {
-    max-width: 80%;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
-  .content .card {
-    max-width: 60%;
+    max-width: 580px;
   }
 }
 .content .card-logo--redCircleBG {
@@ -407,7 +410,7 @@ table {
   margin-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 980px) and (max-width: 1299px) {
+@media screen and (min-width: 780px) and (max-width: 1289px) {
   .content .card-learnLove {
     width: 50%;
   }
@@ -428,7 +431,7 @@ table {
   margin-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 980px) and (max-width: 1299px) {
+@media screen and (min-width: 780px) and (max-width: 1289px) {
   .content .card-tools {
     width: 50%;
   }
@@ -445,7 +448,12 @@ table {
   font-size: 1.125em;
 }
 .content-projects {
-  margin: 120px;
+  padding: 120px 150px;
+}
+@media screen and (min-width: 780px) and (max-width: 979px) {
+  .content-projects {
+    padding: 120px 100px;
+  }
 }
 .content-projects--semiBold {
   width: 100%;
@@ -456,26 +464,32 @@ table {
 }
 .content .projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 120px;
 }
-@media screen and (min-width: 980px) and (max-width: 1299px) {
+@media screen and (min-width: 780px) and (max-width: 1161px) {
   .content .projects {
     height: 1000px;
-    display: flex;
-    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+@media screen and (min-width: 1162px) and (max-width: 1289px) {
+  .content .projects {
+    height: 600px;
     align-content: space-between;
   }
 }
 .content .projects .project {
-  max-width: 30%;
+  max-width: 100%;
+  padding: 0;
 }
-@media screen and (min-width: 980px) and (max-width: 1023px) {
+@media screen and (min-width: 780px) and (max-width: 1161px) {
   .content .projects .project {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
+@media screen and (min-width: 1162px) and (max-width: 1289px) {
   .content .projects .project {
     max-width: 80%;
   }
@@ -486,6 +500,18 @@ table {
   border-bottom: 5px solid #A39B9C;
   object-fit: cover;
   transition: all 0.1s;
+}
+@media screen and (min-width: 780px) and (max-width: 1161px) {
+  .content .projects .project-img {
+    width: 580px;
+    max-height: fit-content;
+  }
+}
+@media screen and (min-width: 1290px) and (max-width: 1402px) {
+  .content .projects .project-img {
+    max-height: 220px;
+    border-radius: 30px;
+  }
 }
 .content .projects .project-img:hover {
   opacity: 0.8;
@@ -531,6 +557,11 @@ table {
   width: 80%;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 1162px) and (max-width: 1289px) {
+  .footer .medias {
+    width: 90%;
+  }
 }
 .footer .medias-sections {
   width: 60px;
